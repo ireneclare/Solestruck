@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+	<application>testing-solestruck</application>
+	<version>13</version>
+	<precompilation-enabled>false</precompilation-enabled>
+	<!-- Configure java.util.logging -->
+	<system-properties>
+		
+		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+		<property name="AppMode" value="STAGING"/>
+		<property name="MailingService" value="http://12.solestruck-search.appspot.com/restEmail/emailService"/>
+		<property name="DEV_MailingList" value="iri@a-cti.com"/>
+		<property name="DEV_MailingListNames" value="Irene"/>
+		<property name="STAGING_MailingList" value="iri@a-cti.com,srr@a-cti.com"/>
+		<property name="STAGING_MailingListNames" value="Development,Testing"/>
+		<property name="LIVE_MailingList" value="Sole.Email@solestruck.com"/>
+		<property name="LIVE_MailingListNames" value="Sole.Email"/>
+		<property name="ProjectMode" value="SOLESTRUCK"/>
+		<property name="DEV_Tenth_Pair_MailingList" value="marichithra.kathiresan@a-cti.com"></property>
+		<property name="DEV_Tenth_Pair_MailingListNames" value="Chithra"></property>
+		<property name="STAGING_Tenth_Pair_MailingList" value="development@solestruck.com,testing@solestruck.com"></property>
+		<property name="STAGING_Tenth_Pair_MailingListNames" value="Development,Testing"></property>
+		<property name="LIVE_Tenth_Pair_MailingList" value="customerservice@solestruck.com"></property>
+		<property name="LIVE_Tenth_Pair_MailingListNames" value="Customer Service"></property>
+		
+		<property name="AppId" value="https://live-solestruck.appspot.com"/>
+		
+		<property name="STAGING_STATIC" value="http://testing.solestruck.com"/>
+		<property name="LIVE_STATIC" value="http://www.solestruck.com"/>
+		
+		
+		<!-- vm template mapping -->
+		
+		<!-- this is for veroniqa-solestruck 
+		
+		<property name="PURCHASE_CONFIRMATION" value="1215045"/>
+		<property name="PURCHASE_CONFIRMATION_PREORDER" value="1214045"/>
+		<property name="PURCHASE_CONFIRMATION_RETAIL" value="1199019"/>
+		<property name="ORDER_INVOICE" value="1206001"/>
+		
+		<property name="SEND_TO_FRIEND" value="1211009"/>
+		<property name="DONT_SEE_YOUR_SIZE" value="1208049"/>
+		<property name="SHIPPING_CONFIRMATION" value="1211011"/>
+		<property name="OPEN_WISHLIST" value="263677" />
+		<property name="RETURN_LABEL" value="1208050"/>
+		<property name="DAILY_SALES_MAIL" value="1213015"/>
+		<property name="Forgot_Password" value="1219018"/>
+		
+		-->
+		
+		<!-- this is for testing-solestruck -->
+		
+		<property name="PURCHASE_CONFIRMATION" value="1176446"/>
+		<property name="PURCHASE_CONFIRMATION_PREORDER" value="1175495"/>
+		<property name="PURCHASE_CONFIRMATION_RETAIL" value="1171481"/>
+		<property name="ORDER_INVOICE" value="1340232"/>
+		
+		<property name="SEND_TO_FRIEND" value="1171482"/>
+		<property name="DONT_SEE_YOUR_SIZE" value="1173481"/>
+		<property name="SHIPPING_CONFIRMATION" value="1172510"/>
+		<property name="OPEN_WISHLIST" value="263677" />
+		<property name="RETURN_LABEL" value="1177398"/>
+		<property name="DAILY_SALES_MAIL" value="1175494"/>
+		<property name="Forgot_Password" value="1178391"/>
+		<property name="ACNE_ORDER" value="1302024" /> 
+		<property name="WRITE_A_REVIEW" value="2946104"/>
+		<property name="ABANDONED_CART" value="2944107"/>
+		<property name="ABANDONED_WISHLIST" value="2936193"/>
+		<property name="TENTH_PAIR_NOTIFICATION" value="22093187"/>
+		
+		<!-- this is for live-solestruck 	
+		
+		<property name="PURCHASE_CONFIRMATION" value="1176446"/>
+		<property name="PURCHASE_CONFIRMATION_PREORDER" value="1175495"/>
+		<property name="PURCHASE_CONFIRMATION_RETAIL" value="1171481"/>
+		<property name="ORDER_INVOICE" value="1340232"/>
+		<property name="SEND_TO_FRIEND" value="1171482"/>
+		<property name="DONT_SEE_YOUR_SIZE" value="1173481"/>
+		<property name="SHIPPING_CONFIRMATION" value="1172510"/>
+		<property name="OPEN_WISHLIST" value="263677" />
+		<property name="RETURN_LABEL" value="1177398"/>
+		<property name="DAILY_SALES_MAIL" value="1175494"/>
+		<property name="Forgot_Password" value="1178391"/>
+		<property name="ACNE_ORDER" value="1302024" />
+		<property name="WRITE_A_REVIEW" value="2946104"/>
+		<property name="ABANDONED_CART" value="2944107"/>
+		<property name="ABANDONED_WISHLIST" value="2936193"/>
+		<property name="TENTH_PAIR_NOTIFICATION" value="22093187"/>
+		
+		-->
+		
+		<!-- vm template mapping -->
+		<!-- customer service page mapping -->
+		
+		<!-- this is for veroniqa-solestruck 
+		
+		<property name="SHIPPING" value="1168040"/>
+		<property name="FAQ" value="1180013"/>
+		<property name="RETURNS" value="1174049"/>
+		<property name="INTERNATIONAL" value="1167050"/>
+		<property name="PRIVACY_NOTICE" value="1182008"/>
+		<property name="ABOUT_US" value="1179004"/>
+		<property name="TERMS_OF_USE" value="1158260"/>
+		<property name="SIZE_CHART" value="1143217"/>
+		<property name="CUSTOMER_SERVICE" value="1143218"/>
+		<property name="MY_ACCOUNT" value="1181007"/>
+		<property name="JOBS" value="1440002"/>
+		<property name="ORDER_STATUS" value="1174048"/>
+		
+		-->
+		
+		<!-- this is for testing-solestruck 
+		
+		<property name="SHIPPING" value="1101235"/>
+		<property name="FAQ" value="1097451"/>
+		<property name="RETURNS" value="1099312"/>
+		<property name="INTERNATIONAL" value="1101234"/>
+		<property name="PRIVACY_NOTICE" value="1097452"/>
+		<property name="ABOUT_US" value="1099313"/>
+		<property name="TERMS_OF_USE" value="1099311"/>
+		<property name="SIZE_CHART" value="1100269"/>
+		<property name="CUSTOMER_SERVICE" value="1100271"/>
+		<property name="PAYPAL_CUSTOMER_SERVICE" value="9461247"/>
+		<property name="MY_ACCOUNT" value="1103040"/>
+		<property name="JOBS" value="1354938"/>
+		<property name="ORDER_STATUS" value="1096602"/>
+		<property name="AFFILIATES" value="1570439"/>
+		<property name="FACEBOOK_SHOP" value="12059752"/> -->
+		
+	
+		
+		<!-- this is for live-solestruck -->
+		
+		<property name="SHIPPING" value="1101235"/>
+		<property name="FAQ" value="1097451"/>
+		<property name="RETURNS" value="1099312"/>
+		<property name="INTERNATIONAL" value="1101234"/>
+		<property name="PRIVACY_NOTICE" value="1097452"/>
+		<property name="ABOUT_US" value="1099313"/>
+		<property name="TERMS_OF_USE" value="1099311"/>
+		<property name="SIZE_CHART" value="1100269"/>
+		<property name="CUSTOMER_SERVICE" value="1100271"/>
+		<property name="PAYPAL_CUSTOMER_SERVICE" value="11215072"/>
+		<property name="MY_ACCOUNT" value="1103040"/>
+		<property name="JOBS" value="1354938"/>
+		<property name="ORDER_STATUS" value="1096602"/>
+		<property name="AFFILIATES" value="1570439"/>
+		<property name="FACEBOOK_SHOP" value="12059752"/>
+		
+		<!-- customer service page mapping -->
+		
+		
+		<!-- <property name="brandid" value="59284"/> -->
+		<property name="brandid" value="1"/>
+		
+		<property name="ShoppingCartSavingScheme" value="cache"/>
+		<property name="secureServiceToken" value="aGoodTeamWorkAlwaysWins"/>
+		
+		
+	</system-properties>
+	<auto-id-policy>legacy</auto-id-policy>
+	<static-files>
+        <include path="/*/*.css" expiration="7d 5h" />
+        <include path="/*/*.jsp" expiration="7d 5h" />
+        <include path="/*/*.js"  expiration="7d 5h" />
+        <include path="/*/*.gif" expiration="7d 5h" />
+        <include path="/*/*.png" expiration="7d 5h" />
+        <include path="/*/*.jpg" expiration="7d 5h" />
+        <include path="/*/*.ico" expiration="7d 5h" />        
+    </static-files>
+    
+    
+	<sessions-enabled>true</sessions-enabled>
+	<threadsafe>true</threadsafe>
+</appengine-web-app>

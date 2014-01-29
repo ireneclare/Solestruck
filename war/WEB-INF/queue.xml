@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queue-entries>
+<!--Set the number of max concurrent requests to 10-->
+  <queue>
+    <name>default</name>
+    <rate>500/s</rate>
+    <bucket-size>100</bucket-size>
+    <max-concurrent-requests>100</max-concurrent-requests>
+  </queue>
+  
+   <queue>
+    <name>streetcredUpdate</name>
+    <rate>500/s</rate>
+    <bucket-size>100</bucket-size>
+    <max-concurrent-requests>100</max-concurrent-requests>
+  </queue>
+    <queue>
+    <name>sendEmailUs</name>
+    <rate>500/s</rate>
+    <bucket-size>100</bucket-size>
+    <max-concurrent-requests>100</max-concurrent-requests>
+  </queue>
+  
+  
+</queue-entries>

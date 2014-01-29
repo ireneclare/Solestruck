@@ -1,0 +1,62 @@
+<project name="CSSJSMinifier" default="jar" basedir="..">
+	<target name="init">
+		<property name="src.dir" value="src" />
+		<property name="bin.dir" value="classesForYUI" />
+		<property name="dist.dir" value="build" />
+		<property name="js.dir" value="Copy_js" />
+		<property name="jsmin.dir" value="YUIjsmin" />
+		<property name="project.name" value="YUIAnt" />
+		<property name="css.dir" value="../war/css" />
+		<property name="jss.dir" value="../war/js" />
+		<property environment="env" />
+		<path id="compile.classpath">
+			<path location="${dist.dir}/ant.jar">
+			</path>
+			<path location="${dist.dir}/yuicompressor-2.4.2.jar">
+			</path>
+		</path>
+		<mkdir dir="${bin.dir}" />
+	</target>
+
+	<target name="compile" depends="init" description="Compiles the project">
+		<javac srcdir="${src.dir}" destdir="${bin.dir}" debug="on">
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile" description="Generate the YUIAnt jar">
+		<jar basedir="${bin.dir}" destfile="${dist.dir}/${project.name}.jar" />
+	</target>
+
+
+	<target name="minify" depends="init" description="Minifiy a set of files">
+		<available file="${dist.dir}/YUIAnt.jar" property="YUIANT_AVAILABLE" />
+		<fail unless="YUIANT_AVAILABLE" message="Run jar target to generate the required task"/>
+		<taskdef name="yuicompress" classname="com.yahoo.platform.yui.compressor.YUICompressTask">
+			<classpath>
+				<pathelement path="${dist.dir}/yuicompressor-2.4.2.jar" />
+				<pathelement path="${dist.dir}/YUIAnt.jar" />
+			</classpath>
+		</taskdef>
+		<mkdir dir="${jsmin.dir}" />
+		<yuicompress linebreak="300" warn="false" munge="yes" preserveallsemicolons="true" 
+			outputfolder="${jsmin.dir}">
+			<fileset dir="${js.dir}" >
+				<include name="**/*.js" />
+				<include name="**/*.css" />
+			</fileset>
+		</yuicompress>
+	</target>
+	
+	<target name="copyFiles" depends="init">
+		<mkdir dir="${js.dir}/css" />
+		<mkdir dir="${js.dir}/js" />
+	   <copy todir="${js.dir}/js">
+		  <fileset dir="${jss.dir}"/>
+		</copy>
+		<copy todir="${js.dir}/css">
+		  <fileset dir="${css.dir}"/>
+		</copy>
+	  </target>
+	
+</project>

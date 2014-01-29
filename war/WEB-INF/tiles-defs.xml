@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+  
+
+ <definition name="Home" template="/pages/Home.jsp">
+ 	     <put-attribute name="topmenumain" value="/pages/topmenumain.jsp" /> 
+ 	     <put-attribute name="header" value="/pages/header.jsp" /> 
+ 	     <put-attribute name="main" value="/pages/main.jsp" />
+ 	     <put-attribute name="footer" value="/pages/footer.jsp" />
+ 	     <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		 
+   </definition>
+  
+  <definition name="CustomErrorPage" template="/pages/CustomErrorPage.jsp">
+ 	     <put-attribute name="header" value="/pages/header.jsp" /> 
+ 	     <put-attribute name="footer" value="/pages/footer.jsp" />
+ 	      <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		 <put-attribute name="topmenumain" value="/pages/topmenumain.jsp" /> 
+   </definition>
+  
+  <definition name="VendorPage" template="/pages/VendorPage.jsp">
+  		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+		
+  </definition>
+  <definition name="registration" template="/pages/registration.jsp">
+  		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+		
+  </definition>
+  
+  <definition name="my_account_info" template="/pages/my_account_info.jsp">
+  		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+		
+  </definition>
+  
+  <definition name="myAccount" template="/pages/myAccount.jsp">
+  		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+   <definition name="order_status" template="/pages/order_status.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="item_detail" template="/pages/item_detail.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="CheckoutSignIn" template="/pages/CheckoutSignIn.jsp">
+  </definition>
+
+  <definition name="CheckoutAccountInfo" template="/pages/CheckoutAccountInfo.jsp">
+  </definition>
+
+  <definition name="CheckoutShipping" template="/pages/CheckoutShipping.jsp">
+  </definition>
+
+  <definition name="CheckoutPayment" template="/pages/CheckoutPayment.jsp">
+  </definition>
+  
+  <definition name="NewArrival" template="/pages/NewArrival.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+   <definition name="Style" template="/pages/Style.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+   <definition name="wishlist" template="/pages/wishlist.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+   <definition name="Sale" template="/pages/Sale.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="SortPage" template="/pages/SortPage.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+   <definition name="EventLanding" template="/pages/EventLanding.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+   <definition name="Featured" template="/pages/Featured.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="ComingSoon" template="/pages/ComingSoon.jsp">
+		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="TermsOfUse" template="/pages/TermsOfUse.jsp">
+  <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="Privacypolicy" template="/pages/Privacypolicy.jsp">
+  <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="customerservice" template="/pages/customerservice.jsp">
+  <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+   <definition name="paypalcustomerservice" template="/pages/paypalcustomerservice.jsp">
+ 		 <put-attribute name="header" value="/pages/header.jsp" />
+		 <put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="faq" template="/pages/faq.jsp">
+  <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="salefaq" template="/pages/salefaq.jsp">
+  		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="jobs" template="/pages/jobs.jsp">
+  <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="sizechart" template="/pages/sizechart.jsp">
+  <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="Aboutus" template="/pages/Aboutus.jsp">
+  <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="returns" template="/pages/returns.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="International" template="/pages/International.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="shipping" template="/pages/shipping.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="ShoppingCartPopUp" template="/pages/ShoppingCartPopUp.jsp">
+  </definition>
+  
+  <definition name="thanksForOrder" template="/pages/thanksForOrder.jsp">
+  <put-attribute name="footerForThanks" value="/pages/footerForThanks.jsp" />
+  </definition>
+  
+  <definition name="ShoppingCartCheckout" template="/pages/ShoppingCartCheckout.jsp">
+  </definition>
+  
+  
+  
+  <definition name="NewThankyou" template="/pages/NewThankyou.jsp">
+  <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  
+  <definition name="clearCache" template="/pages/clearCache.jsp">
+  </definition>
+  
+  
+  <definition name="FilteredProducts" template="/pages/FilteredProducts.jsp">
+  </definition>
+  
+  <definition name="FilteredProductsForSortPage" template="/pages/FilteredProductsForSortPage.jsp">
+  </definition>
+  
+  <definition name="FilteredProductsForNewArrivals" template="/pages/FilteredProductsForNewArrivals.jsp">
+  </definition>
+  
+  <definition name="FilteredProductsForSalePage" template="/pages/FilteredProductsForSalePage.jsp">
+  </definition>
+  
+  <definition name="FilteredProductsForVintagePage" template="/pages/FilteredProductsForVintagePage.jsp">
+  </definition>
+  
+  <definition name="FilteredProductsForComingSoonPage" template="/pages/FilteredProductsForComingSoonPage.jsp">
+  </definition>
+  
+  <definition name="FilteredProductsForCustomSalePage" template="/pages/FilteredProductsForCustomSalePage.jsp">
+  </definition>
+  
+  <definition name="lookbook" template="/pages/lookbook.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="streetcred" template="/pages/streetcred.jsp">
+  		 <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+ 		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" /> 
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="betalookbook" template="/pages/betalookbook.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="betaalbum" template="/pages/betaalbum.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="department_of_antiquitieslookbook" template="/pages/department_of_antiquitieslookbook.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  
+  <definition name="checklistlookbook" template="/pages/checklistlookbook.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+ 
+ 
+ 
+ <definition name="up_on_it" template="/pages/up_on_it.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  
+  <definition name="weekender" template="/pages/weekender.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  
+  <definition name="tess_pare_mayer" template="/pages/tess_pare_mayer.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  <definition name="senso" template="/pages/senso.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  
+  
+  <definition name="room_service" template="/pages/room_service.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="searchPage" template="/pages/searchPage.jsp">
+  		<put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="filter" value="/pages/filter.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+		
+  </definition>
+  
+  <definition name="to_the_source" template="/pages/to_the_source.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="indiansummer" template="/pages/indiansummer.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="laisla" template="/pages/laisla.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="solestruckbridgeburn" template="/pages/solestruckbridgeburn.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="tobeannounced" template="/pages/tobeannounced.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="inthespirit" template="/pages/inthespirit.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="nightrider" template="/pages/nightrider.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="tbass" template="/pages/tbass.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="ontheroad" template="/pages/ontheroad.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  
+  <definition name="Affiliates" template="/pages/Affiliates.jsp">
+ 	     <put-attribute name="topmenumain" value="/pages/topmenumain.jsp" /> 
+ 	     <put-attribute name="header" value="/pages/header.jsp" /> 
+ 	     <put-attribute name="footer" value="/pages/footer.jsp" /> 
+ 	      <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+   </definition>
+   
+   <definition name="FirstTime_Volume1" template="/pages/FirstTime_Volume1.jsp">
+   <put-attribute name="header" value="/pages/header.jsp" />
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+		 <put-attribute name="PopUp" value="/pages/PopUp.jsp" />
+		<put-attribute name="topmenumain" value="/pages/topmenumain.jsp" />
+  </definition>
+  <definition name="redirect" template="/pages/redirect.jsp">
+  </definition>
+  <definition name="checkout" template="/pages/checkout.jsp">
+ </definition>
+  
+  
+  
+   <definition name="clearAllFrontEndCache" template="/pages/clearAllCache.jsp">
+  </definition>
+  
+  
+</tiles-definitions>

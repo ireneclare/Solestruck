@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!DOCTYPE urlrewrite
+        PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.0.dtd">
+
+    <urlrewrite>
+  
+    <rule match-type="regex" use-query-string="true">
+        <from>/assistance.do?page=Returns</from>
+        <to type="permanent-redirect">/returns</to>
+    </rule>
+    <!-- <rule match-type="regex" use-query-string="true">
+        <from>/returns</from>
+        <to type="permanent-redirect">/returns</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+        <from>/giftcertificates/</from>
+        <to type="permanent-redirect">/giftcertificates</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/faq/</from>
+        <to type="permanent-redirect">/faq</to>
+    </rule> -->
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/bronze-archive/</from>
+        <to type="permanent-redirect">/bronze-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/brown-archive/</from>
+        <to type="permanent-redirect">/brown-shoes/</to>
+    </rule>
+    
+	<rule match-type="regex" use-query-string="true">
+        <from>/flash-sale-matiko-senso-irregular-choice/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/SignOutAction.do(.*)$</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/shoebox.do(.*)$</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/weddingshoes/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/kitten-heels/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/comfort/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/espadrilles/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/camper-on-sale/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/flip-flops/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/canvas/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+   <!--  <rule match-type="regex" use-query-string="true">
+        <from>/flats/</from>
+        <to type="permanent-redirect">/</to>
+    </rule> -->
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/leather/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/oxfords/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/wedges/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/western/</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/flats([^.!?\s][^.!?]*(?:[.!?](?!['"]?\s|$)[^.!?]*)*(?=\s|$))</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <!-- <rule match-type="regex" use-query-string="true">
+        <from>/affiliates/</from>
+        <to type="permanent-redirect">/assistance.do?page=Affiliates</to>
+    </rule> -->
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/pages/ClickToEmail.jsp</from>
+        <to type="permanent-redirect">/assistance.do?page=CustomerService</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/black-archive/</from>
+        <to type="permanent-redirect">/black-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/boots-dolce-vita/</from>
+        <to type="permanent-redirect">/dolce-vita-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/platforms-gold-dot/</from>
+        <to type="permanent-redirect">/gold-dot-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/platforms-jeffrey-campbell/</from>
+        <to type="permanent-redirect">/jeffrey-campbell-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/sneakers-jil-sander-navy/</from>
+        <to type="permanent-redirect">/jil-sander-navy-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/the-damned-mens-shoes/</from>
+        <to type="permanent-redirect">/mens-the-damned/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/mens-adidas-originals-x-jeremy-scott/page-1/</from>
+        <to type="permanent-redirect">/mens-adidas-originals/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/bed-stu-mens-shoes/</from>
+        <to type="permanent-redirect">/mens-bed-stu/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/palladium-mens-boots/</from>
+        <to type="permanent-redirect">/mens-boots/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/doc-martens-mens-womens-shoes/</from>
+        <to type="permanent-redirect">/mens-doc-martens-mens/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/generic-surplus-mens-shoes/</from>
+        <to type="permanent-redirect">/mens-generic-surplus/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/hellraiser-mens-by-unif-womens-shoes/</from>
+        <to type="permanent-redirect">/mens-hellraiser-mens-by-unif/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/schmoove-mens-shoes/</from>
+        <to type="permanent-redirect">/mens-schmoove/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/swear-mens-shoes/</from>
+        <to type="permanent-redirect">/mens-swear/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/first-by-jeffrey-campbell-womens-shoes/</from>
+        <to type="permanent-redirect">/mens-the-damned/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/wolverine-womens-shoes/</from>
+        <to type="permanent-redirect">/mens-wolverine/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/mens-archive/</from>
+        <to type="permanent-redirect">/mens/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/palladium-mens-shoes/</from>
+        <to type="permanent-redirect">/mens/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/metallic-archive/</from>
+        <to type="permanent-redirect">/metallic-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/runway.do</from>
+        <to type="permanent-redirect">/new-arrivals/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/preorders/(.*)/</from>
+        <to type="permanent-redirect">/preorders/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/boots-rachel-comey/</from>
+        <to type="permanent-redirect">/rachel-comey-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/boots-to-be-announced/</from>
+        <to type="permanent-redirect">/to-be-announced-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/ugg-australia-womens-boots/</from>
+        <to type="permanent-redirect">/ugg-australia-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/wedges-vagabond/</from>
+        <to type="permanent-redirect">/vagabond-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/vagabond-womens-shoes/page-2/</from>
+        <to type="permanent-redirect">/vagabond-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/vintage-no.-454-whisky-colored-leather-riding-boot-size-6-whiskey/index.html</from>
+        <to type="permanent-redirect">/vintage-no.-454-whisky-colored-leather-riding-boot-size-6--whiskey/index.html</to>
+    </rule>
+    
+    <!-- This is for Updated Bands[ JIRA SSGA-73 ]by YES -->
+    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-alladin-slip-on-mens-by-cheap-monday/</from>
+	        <to type="permanent-redirect">/mens-cheap-monday/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/alladin-slip-on-mens-by-cheap-monday-alladin-slip-on-mens-black/index.html</from>
+	        <to type="permanent-redirect">/cheap-monday-alladin-slip-on-mens-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-classics-by-buffalo/</from>
+	        <to type="permanent-redirect">/mens-buffalo/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/classics-by-buffalo-1302-4-(.*)$</from>
+	        <to type="redirect">/buffalo-1302-4-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/classics-by-buffalo-1310-2-(.*)$</from>
+	        <to type="redirect">/buffalo-1310-2-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/classics-by-buffalo-1317-2-(.*)$</from>
+	        <to type="redirect">/buffalo-1317-2-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/classics-by-buffalo-1345-30-texas-oil-negro/index.html</from>
+	        <to type="permanent-redirect">/buffalo-1345-30-mens-texas-oil-negro/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/classics-by-buffalo-1348-14-texas-oil-negro/index.html</from>
+	        <to type="permanent-redirect">/buffalo-1348-14-texas-oil-negro/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/classics-by-buffalo-1348-2-nubuck-gris-silver/index.html</from>
+	        <to type="permanent-redirect">/buffalo-1348-2-mens-nubuck-gris-silver/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/classics-by-buffalo-2208-(.*)$</from>
+	        <to type="redirect">/buffalo-2208-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-doc-martens-mens/</from>
+	        <to type="permanent-redirect">/mens-dr.-martens/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/doc-martens-mens-8-eye-boot-(.*)$</from>
+	        <to type="redirect">/dr.-martens-8-eye-boot-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/doc-martens-mens-alvis-black/index.html</from>
+	        <to type="permanent-redirect">/dr.-martens-alvis-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/doc-martens-mens-arien-black-white/index.html</from>
+	        <to type="permanent-redirect">/dr.-martens-arien-mens-black-white/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/doc-martens-mens-barrett-(.*)$</from>
+	        <to type="redirect">/dr.-martens-barrett-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/doc-martens-mens-beckett-(.*)$</from>
+	        <to type="redirect">/dr.-martens-beckett-$1</to>
+	    </rule>
+    	
+    	<rule match-type="regex" use-query-string="true">
+	        <from>/doc-martens-mens-castel-blue-bleached-denim/index.html</from>
+	        <to type="permanent-redirect">/dr.-martens-castel-mens-blue-bleached-denim/index.html</to>
+	    </rule>
+    	
+    	 <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/doc-martens-mens-harlen-(.*)$</from>
+	        <to type="redirect">/dr.-martens-harlen-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/doc-martens-mens-nixon-black/index.html</from>
+	        <to type="permanent-redirect">/dr.-martens-nixon-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/doc-martens-mens-pendleton-(.*)$</from>
+	        <to type="redirect">/dr.-martens-pendleton-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/doc-martens-mens-ramsey-(.*)$</from>
+	        <to type="redirect">/dr.-martens-ramsey-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-doctor-martens-mens-x-liberty-london/</from>
+	        <to type="permanent-redirect">/mens-dr.-martens-x-liberty-london/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/doctor-martens-mens-x-liberty-london-1461-shoe-(.*)$</from>
+	        <to type="redirect">/dr.-martens-x-liberty-london-1461-shoe-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-espadrille-shoe-mens-by-veletto/</from>
+	        <to type="permanent-redirect">/mens-veletto/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/espadrille-shoe-mens-by-veletto-espadrille-shoe-(.*)$</from>
+	        <to type="redirect">/veletto-espadrille-shoe-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-man-sandal-by-veletto/</from>
+	        <to type="permanent-redirect">/mens-veletto/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/man-sandal-by-veletto-sandal-black/index.html</from>
+	        <to type="permanent-redirect">/veletto-sandal-mens-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-gladiator-man-sandal-by-veletto/</from>
+	        <to type="permanent-redirect">/mens-veletto/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/gladiator-man-sandal-by-veletto-gladiator-sandal-mens-black-white/index.html</from>
+	        <to type="permanent-redirect">/veletto-gladiator-sandal-mens-black-white/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-hellraiser-mens-by-unif/</from>
+	        <to type="permanent-redirect">/mens-unif/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/hellraiser-mens-by-unif-hellraiser-(.*)$</from>
+	        <to type="redirect">/unif-hellraiser-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-ktz-mens/</from>
+	        <to type="permanent-redirect">/mens-k.t.z./</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/ktz-mens-(.*)$</from>
+	        <to type="redirect">/k.t.z.-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-oc-mens/</from>
+	        <to type="permanent-redirect">/mens-opening-ceremony/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/oc-mens-(.*)$</from>
+	        <to type="redirect">/opening-ceremony-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-rc-mens/</from>
+	        <to type="permanent-redirect">/mens-rachel-comey/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/rc-mens-(.*)$</from>
+	        <to type="redirect">/rachel-comey-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-s2a-mens/</from>
+	        <to type="permanent-redirect">/mens-surface-to-air/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/s2a-mens-espadrilles-boots-v1-black/index.html</from>
+	        <to type="permanent-redirect">/surface-to-air-espadrilles-boots-v1-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-t.u.k.-mens/</from>
+	        <to type="permanent-redirect">/mens-t.u.k./</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/t.u.k.-mens-creeper-low-(.*)$</from>
+	        <to type="redirect">/t.u.k.-creeper-low-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/t.u.k.-mens-d-ring-(.*)$</from>
+	        <to type="redirect">/t.u.k.-d-ring-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/t.u.k.-mens-rudeboy-(.*)$</from>
+	        <to type="redirect">/t.u.k.-rudeboy-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-the-underground-mens/</from>
+	        <to type="permanent-redirect">/mens-underground/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/the-underground-mens-apollo-boy-black-patent/index.html</from>
+	        <to type="permanent-redirect">/underground-apollo-boy-mens-black-patent/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/the-underground-mens-izzue-ripple-sole-boot-black/index.html</from>
+	        <to type="permanent-redirect">/underground-izzue-ripple-sole-boot-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/the-underground-mens-spike-with-zip-boot-black-box-leather/index.html</from>
+	        <to type="permanent-redirect">/underground-spike-with-zip-boot-mens-black-box-leather/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/the-underground-mens-warrior-black-box-leather/index.html</from>
+	        <to type="permanent-redirect">/underground-warrior-mens-black-box-leather/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-y.r.u.-mens/</from>
+	        <to type="permanent-redirect">/mens-y.r.u./</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/y.r.u.-mens-1-time-black-cheetah/index.html</from>
+	        <to type="permanent-redirect">/y.r.u.-1-time-black-cheetah/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/y.r.u.-mens-lowf-black-with-bone/index.html</from>
+	        <to type="permanent-redirect">/y.r.u.-lowf-mens-black-with-bone/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/y.r.u.-mens-lowf-tassel-black/index.html</from>
+	        <to type="permanent-redirect">/y.r.u.-lowf-tassel-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-1000-mile-by-wolverine/</from>
+	        <to type="permanent-redirect">/mens-wolverine/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/1000-mile-by-wolverine-1000-mile-boot-(.*)$</from>
+	        <to type="redirect">/wolverine-1000-mile-boot-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/1000-mile-by-wolverine-addison-boot-black-brown/index.html</from>
+	        <to type="permanent-redirect">/wolverine-addison-boot-mens-black-brown/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-camper-together-x-willhelm-mens/</from>
+	        <to type="permanent-redirect">/mens-camper-x-bernhard-willhelm/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/camper-together-x-willhelm-mens-(.*)$</from>
+	        <to type="redirect">/camper-x-bernhard-willhelm-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-cutout-oxford-mens-by-deandri/</from>
+	        <to type="permanent-redirect">/mens-deandri/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/cutout-oxford-mens-by-deandri-cutout-oxford-mens-black/index.html</from>
+	        <to type="permanent-redirect">/deandri-cutout-oxford-mens-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-moonspoon-saloon-x-buffalo/</from>
+	        <to type="permanent-redirect">/mens-buffalo-x-moonspoon-saloon/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/moonspoon-saloon-x-buffalo-(.*)$</from>
+	        <to type="redirect">/buffalo-x-moonspoon-saloon-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-jeffrey-campbell/</from>
+	        <to type="permanent-redirect">/mens-the-damned/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/jeffrey-campbell-c-605-(.*)$</from>
+	        <to type="redirect">/the-damned-c-605-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/jeffrey-campbell-13980-mens-(.*)$</from>
+	        <to type="redirect">/the-damned-13980-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/jeffrey-campbell-man-stud-mens-(.*)$</from>
+	        <to type="redirect">/the-damned-man-stud-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/jeffrey-campbell-barker-mens-(.*)$</from>
+	        <to type="redirect">/the-damned-barker-mens-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-jd-fisk/</from>
+	        <to type="permanent-redirect">/mens-j.d.-fisk/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/jd-fisk-(.*)$</from>
+	        <to type="redirect">/j.d.-fisk-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/tuk-womens-shoes/</from>
+	        <to type="permanent-redirect">/t.u.k.-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/tuk-(.*)$</from>
+	        <to type="redirect">/t.u.k.-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/l.a.m.b-womens-shoes/</from>
+	        <to type="permanent-redirect">/l.a.m.b.-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/l.a.m.b-(.*)$</from>
+	        <to type="redirect">/l.a.m.b.-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/gareth-pugh-x-melissa-womens-shoes/</from>
+	        <to type="permanent-redirect">/melissa-x-gareth-pugh-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/gareth-pugh-x-melissa-(.*)$</from>
+	        <to type="redirect">/melissa-x-gareth-pugh-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/vivienne-westwood-x-melissa-womens-shoes/</from>
+	        <to type="permanent-redirect">/melissa-x-vivienne-westwood-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/vivienne-westwood-x-melissa-(.*)$</from>
+	        <to type="redirect">/melissa-x-vivienne-westwood-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/wildfox-x-jeffrey-campbell-womens-shoes/</from>
+	        <to type="permanent-redirect">/jeffrey-campbell-x-wildfox-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/wildfox-x-jeffrey-campbell-(.*)$</from>
+	        <to type="redirect">/jeffrey-campbell-x-wildfox-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/black-milk-x-jeffrey-campbell-womens-shoes/</from>
+	        <to type="permanent-redirect">/jeffrey-campbell-x-blackmilk-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/black-milk-x-jeffrey-campbell-(.*)$</from>
+	        <to type="redirect">/jeffrey-campbell-x-blackmilk-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/solestruck-x-jeffrey-campbell-womens-shoes/</from>
+	        <to type="permanent-redirect">/jeffrey-campbell-x-solestruck-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/solestruck-x-jeffrey-campbell-(.*)$</from>
+	        <to type="redirect">/jeffrey-campbell-x-solestruck-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/liberty-london-x-dr.-martens-womens-shoes/</from>
+	        <to type="permanent-redirect">/dr.-martens-x-liberty-london-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/liberty-london-x-dr.-martens-(.*)$</from>
+	        <to type="redirect">/dr.-martens-x-liberty-london-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/maison-martin-margiela-mm6-womens-shoes/</from>
+	        <to type="permanent-redirect">/mm6-maison-martin-margiela-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/maison-martin-margiela-mm6-(.*)$</from>
+	        <to type="redirect">/mm6-maison-martin-margiela-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/belle-of-the-brawl-womens-shoes/</from>
+	        <to type="permanent-redirect">/botb-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/belle-of-the-brawl-(.*)$</from>
+	        <to type="redirect">/botb-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/swear-womens-womens-shoes/</from>
+	        <to type="permanent-redirect">/swear-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/swear-womens-chiara-8-blue/index.html</from>
+	        <to type="permanent-redirect">/swear-chiara-8-blue/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/swear-womens-nena-2-(.*)$</from>
+	        <to type="redirect">/swear-nena-2-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/swear-womens-nena-3-(.*)$</from>
+	        <to type="redirect">/swear-nena-3-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/swear-womens-vienetta-12-(.*)$</from>
+	        <to type="redirect">/swear-vienetta-12-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-gorilla-x-jeremy-scott-black-black/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-gorilla-x-jeremy-scott-black-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-originals-instinct-hi-x-jeremy-scott-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-jeremy-scott-instinct-hi-x-jeremy-scott-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-mega-flex-sandal-x-jeremy-scott-mushroom-brown/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-mega-flex-sandal-x-jeremy-scott-mushroom-brown/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-mega-soft-cell-sandal-x-jeremy-scott-white-black/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-mega-soft-cell-sandal-x-jeremy-scott-white-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-mens-penny-loafer-x-jeremy-scott-columbia-blue-white-multi/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-mens-penny-loafer-x-jeremy-scott-columbia-blue-white-multi/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-wings-2.0-x-jeremy-scott-red-white-blue/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-wings-2.0-x-jeremy-scott-red-white-blue/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-wings-denim-x-jeremy-scott-denim/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-wings-denim-x-jeremy-scott-denim/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-womens-penny-loafer-slm-x-jeremy-scott-columbia-blue-white-multi/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-womens-penny-loafer-slm-x-jeremy-scott-columbia-blue-white-multi/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-originals-womens-sandal-x-jeremy-scott-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-jeremy-scott-womens-sandal-x-jeremy-scott-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-originals-alan-cs-x-ransom-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-ransom-alan-cs-x-ransom-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-originals-army-tr-low-x-ransom-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-ransom-army-tr-low-x-ransom-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-valley-low-x-ransom-light-grey-satellite/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-ransom-valley-low-x-ransom-light-grey-satellite/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-valley-x-ransom-satellite/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-ransom-valley-x-ransom-satellite/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-codie-cognac-suede/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-codie-cognac-suede/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-cosette-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-cosette-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-fernand-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-fernand-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-figgins-burgundy-patent-stella/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-figgins-burgundy-patent-stella/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-frankee-black-white-leather/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-frankee-black-white-leather/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-gobi-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-gobi-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-julie-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-julie-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-kaylee-black-suede/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-kaylee-black-suede/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-lilly-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-lilly-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-mara-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-mara-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-minx-nude-suede/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-minx-nude-suede/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-monika-nude-suede/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-monika-nude-suede/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-monty-cork-cork/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-monty-cork-cork/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-vanissa-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-vanissa-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-vixen-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-vixen-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-zayna-black-leather/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-zayna-black-leather/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-x-opening-ceremony-womens-shoes/</from>
+	        <to type="permanent-redirect">/adidas-originals-x-opening-ceremony-womens-shoes/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-x-opening-ceremony-bmx-cycling-wedge-dark-shale-black/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-opening-ceremony-bmx-cycling-wedge-dark-shale-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/mens-adidas-x-opening-ceremony-mens/</from>
+	        <to type="permanent-redirect">/mens-adidas-originals-x-opening-ceremony/</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-x-opening-ceremony-mens-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-opening-ceremony-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-x-jeremy-scott-mens-penny-loafer-x-jeremy-scott-columbia-blue-white-multi/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-mens-penny-loafer-columbia-blue-white-multi/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-x-jeremy-scott-womens-penny-loafer-slm-x-jeremy-scott-columbia-blue-white-multi/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-womens-penny-loafer-slm-columbia-blue-white-multi/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-originals-x-jeremy-scott-womens-sandal-x-jeremy-scott-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-jeremy-scott-womens-sandal-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-originals-x-ransom-alan-cs-x-ransom-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-ransom-alan-cs-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-x-ransom-valley-x-ransom-satellite/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-ransom-valley-satellite/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-originals-x-opening-ceremony-samba-cycling-hi-mens-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-opening-ceremony-samba-cycling-hi-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/adidas-originals-js-panda-bear-white-black-white/index.html</from>
+	        <to type="permanent-redirect">/adidas-originals-x-jeremy-scott-js-panda-bear-white-black-white/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/adidas-originals-forest-hills-mid-by-david-beckham-(.*)$</from>
+	        <to type="redirect">/adidas-originals-x-david-beckham-forest-hills-mid-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/grim-creeper-mens-by-unif-grim-creeper-black/index.html</from>
+	        <to type="permanent-redirect">/unif-grim-creeper-mens-black/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/the-damned-kline-bc-orange-fatigue/index.html</from>
+	        <to type="permanent-redirect">/the-damned-x-b-calla-kline-bc-orange-fatigue/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-brava-electric-blue-suede/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-brava-electric-blue-suede/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/dolce-vita-quin-black-leather/index.html</from>
+	        <to type="permanent-redirect">/dv8-by-dolce-vita-quin-black-leather/index.html</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-brando-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-brando-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-vesper-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-vesper-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-jannette-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-jannette-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-yasmine-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-yasmine-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/dolce-vita-yves-(.*)$</from>
+	        <to type="redirect">/dv8-by-dolce-vita-yves-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/camper-together-x-willhelm-womens-(.*)$</from>
+	        <to type="redirect">/bernhard-willhelm-x-camper-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/camper-x-bernhard-willhelm-(.*)$</from>
+	        <to type="redirect">/bernhard-willhelm-x-camper-$1</to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/blackmilk-x-solestruck-womens-shoes/</from>
+	        <to type="permanent-redirect">/black-milk-clothing-x-solestruck-womens-shoes/ </to>
+	    </rule>
+	    
+	    <rule match-type="regex" use-query-string="true" use-context="false">
+	     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+	        <from>/blackmilk-x-solestruck-(.*)$</from>
+	        <to type="redirect">/black-milk-clothing-x-solestruck-$1</to>
+	    </rule>
+	    
+		<rule match-type="regex" use-query-string="true">
+	        <from>/mens-acne/</from>
+	        <to type="permanent-redirect">/mens-acne-studios/ </to>
+	    </rule>
+
+	    <rule match-type="regex" use-query-string="true">
+	        <from>/acne-womens-shoes/</from>
+	        <to type="permanent-redirect">/acne-studios-womens-shoes/ </to>
+	    </rule>
+	    
+    <!-- Upto here This is for Updated Bands[ JIRA SSGA-73 ]by YES -->
+    
+    <rule match-type="regex" use-query-string="true">
+       <from>/holiday_ship=yes</from>
+       <to>/homePage.htm?holidayshipping=true</to>
+    </rule>
+    
+    <!-- <rule match-type="regex" use-query-string="true">
+        <from>/vintage-shoes/(.*)/</from>
+        <to type="permanent-redirect">/vintage-shoes/$1</to>
+    </rule> -->
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/pages/itempopdetail.jsp?([^.!?\s][^.!?]*(?:[.!?](?!['"]?\s|$)[^.!?]*)*(?=\s|$))</from>
+        <to type="permanent-redirect">/moonspoon-saloon-x-buffalo-womens-shoes/</to>
+    </rule>
+    
+    
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/myaccount.do(.*)</from>
+        <to type="permanent-redirect">/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+        <from>/finsk-116-97-%28cinza%29.html(.*)</from>
+        <to type="permanent-redirect">/finsk-116-97-cinza/index.html</to>
+    </rule>
+    
+     <rule match-type="wildcard">
+       <from>/</from>
+       <to>/homePage.htm?brandid=1</to>
+    </rule>
+    
+    <!--  bmxjc redirect
+    <rule match-type="regex" use-query-string="true" use-context="true">
+        <from>^/black-milk-x-jeffrey-campbell-(.*)/index.html$</from>
+        <to type="redirect">http://bmxjc.solestruck.com/black-milk-x-jeffrey-campbell-$1/index.html</to>
+    </rule> -->
+   <rule match-type="regex" use-query-string="true">
+       <from>^/solestruck-knows-you/page-(.*)$</from>
+       <to>/getProductsForEventsCategory.htm?eventURL=solestruck-knows-you&amp;SocialCategory=featured&amp;pageno=$1</to>
+   </rule>
+   <rule match-type="regex" use-query-string="true">
+       <from>^/solestruck-knows-you/</from>
+       <to>/getProductsForEventsCategory.htm?eventURL=solestruck-knows-you&amp;pageno=1&amp;SocialCategory=featured</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/search/([^.!?\s][^.!?]*(?:[.!?](?!['"]?\s|$)[^.!?]*)*(?=\s|$))</from>
+       <to>/search.htm?q=$1</to>
+    </rule>
+    
+    
+    
+    <rule match-type="regex" use-query-string="true" use-context="true" >
+        <from>/([[a-z0-9\.]-a-z]+)/[[a-z]]+-([\d*\.?\d?+]+)/[a-z]+-([1-9]+)?/$</from>
+        <to>/topNavigation2.htm?section=$1&amp;size=$2&amp;page=$3</to>
+        <set name="orginURL">%{request-url}</set>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true" use-context="true" >
+        <from>/([[a-z0-9\.]-a-z]+)/([[a-z0-9\.]-a-z]+)/[a-z]+-([0-9]+)?/$</from>
+        <to>/topNavigation2.htm?section=$1&amp;size=$2&amp;page=$3</to>
+        <set name="orginURL">%{request-url}</set>
+    </rule>
+   
+      <rule match-type="regex" use-query-string="true">
+    	 <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+         <from>([[a-z0-9\.]-a-z]+)/[size]+-([\d*\.?\d?+]+)/$</from>
+         <to>/topNavigation1.htm?section=$1&amp;size=$2</to>
+      </rule>
+      
+      <rule match-type="regex" use-query-string="true">
+    	 <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+         <from>([[a-z0-9\.]-a-z]+)/[page]+-([\d*\.?\d?+]+)/$</from>
+         <to>/topNavigation1.htm?section=$1&amp;page=$2</to>
+      </rule>
+      
+         	<rule match-type="regex" use-query-string="true">
+    	 <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+         <from>([[a-z0-9\.]-a-z]+)/([[a-z0-9\.]-a-z]+)/$</from>
+         <to>/topNavigation1.htm?section=$1&amp;page=$2</to>
+      </rule>
+     
+    
+     <rule match-type="regex" use-query-string="true" use-context="true" >
+        <from>/vintage-shoes/([[a-z]-[\d*\.?\d+]]+)$</from>
+        <to>/topNavigation3.htm?size=$1</to>
+        <set name="reqURI">%{request-url}</set>
+    </rule>
+     
+     <rule match-type="regex" use-query-string="true" use-context="true" >
+        <from>/vintage-shoes/([[a-z]-[\d*\.?\d+]]+)/$</from>
+        <to>/topNavigation3.htm?size=$1</to>
+        <set name="reqURI">%{request-url}</set>
+    </rule>
+    
+    
+     <rule match-type="regex" use-query-string="true" use-context="true" >
+        <from>/vintage-shoes/([[a-z]-[\d*\.?\d+]]+)/([[a-z0-9]-a-z]+)$</from>
+        <to>/topNavigation3.htm?size=$1&amp;page=$2</to>
+    </rule>
+    
+    
+    <rule match-type="regex" use-query-string="true">
+       <from>^/returns/</from>
+       <to>/loadReturnsCSpage.htm</to>
+    </rule>
+ 
+ 	<rule match-type="regex" use-query-string="true">
+       <from>^/faq/</from>
+       <to>/loadFaqCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/salefaq/</from>
+       <to>/loadSaleFaqCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/privacynotice/</from>
+       <to>/loadPrivacyNoticeCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/aboutus/</from>
+       <to>/loadAboutUsCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/termsofuse/</from>
+       <to>/loadTermsOfUseCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/sizechart/</from>
+       <to>/loadSizeChartCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/customerservice/</from>
+       <to>/loadCustomerServiceCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/accountinfo/</from>
+       <to>/loadAccountInfoCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/orderstatus/</from>
+       <to>/loadOrderStatusCSpage.htm</to>
+    </rule><rule match-type="regex" use-query-string="true">
+       <from>^/jobs/</from>
+       <to>/loadJobsCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/affiliates/</from>
+       <to>/loadAffiliatesCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/shipping/</from>
+       <to>/loadShippingCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/international/</from>
+       <to>/loadInternationalCSpage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/giftcertificates/</from>
+       <to>/loadGiftcertificatesCSpage.htm</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+       <from>^/search/</from>
+       <to>/search-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+       <from>^/search$</from>
+      <to>/search-womens-shoes/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+       <from>^/search$</from>
+      <to>/preorders/</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+       <from>/([[a-z0-9\.]-a-z]+)/$</from>
+       <to>/topNavigation1.htm?section=$1</to>
+    </rule>
+    
+   <rule match-type="regex" use-query-string="true">
+       <from>/([[a-z0-9\.]_a-z]+)/$</from>
+       <to>/topNavigation1.htm?section=$1</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+       <from>/([[a-z0-9\.]]+)/$</from>
+       <to>/topNavigation1.htm?section=$1</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+       <from>/(.*)/index.html</from>
+       <set name="urlrewrite.product.text">$1</set>
+       <to>/idpRewriteUrl.htm?text=$1</to>
+    </rule>     
+    <rule match-type="regex" use-query-string="true">
+       <from>^/assistance.do</from>
+       <to>/loadCustomerServicePage.htm</to>
+    </rule>
+    <rule match-type="regex" use-query-string="true">
+       <from>^/first-time-vol1-issue1/</from>
+       <to>/topNavigation1.htm?section=first-time-vol1-issue1</to>
+    </rule>	
+    
+    <rule match-type="regex" use-query-string="true" use-context="true">
+    	<condition type="request-uri" operator="notequal">/appstats/stats</condition>
+        <from>/(.*)-index.html(.*)$</from>
+        <to type="redirect">$1/index.html?%{query-string}</to>
+    </rule>
+    
+     <rule match-type="regex" use-query-string="true" use-context="false">
+     <condition type="request-uri" operator="notequal">/appstats/stats</condition>
+        <from>^/(.*)-\((.*)\).html(.*)$</from>
+        <to type="redirect">$1-$2/index.html?%{query-string}</to>
+    </rule>
+    
+    
+    <rule match-type="regex" use-query-string="true">
+    	<from>/abandonmentMailCronService/cart/3</from>
+       <to>/topNavigation1.htm?section=abandonmentMailCart&amp;size=3</to>
+    </rule>
+    
+    <rule match-type="regex" use-query-string="true">
+    	<from>/abandonmentMailCronService/wishlist/3</from>
+       <to>/topNavigation1.htm?section=abandonmentMailWishlist&amp;size=3</to>
+    </rule>
+    
+    
+    </urlrewrite>

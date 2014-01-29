@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib 
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+
+    <display-name>StaticResourceVersion</display-name>    
+    <tlib-version>1.0</tlib-version>
+    <uri>http://solestruck.com/resources</uri>
+    
+    <function>
+        <name>styleScriptVersion</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.lang.String styleScriptVersion( javax.servlet.http.HttpServletRequest )</function-signature>
+    </function>
+    <function>
+        <name>getDiscountPercentageForFB</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.lang.Double getDiscountPercentageForFB()</function-signature>
+    </function>
+    <function>
+        <name>getDiscountProgramForFB</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>com.veroniqa.jdo.DiscountProgram getDiscountProgramForFB()</function-signature>
+    </function>
+    
+    <function>
+        <name>getDiscountProgramForCustomSale</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>com.veroniqa.jdo.DiscountProgram getDiscountProgramForCustomSale()</function-signature>
+    </function>
+    
+    <function>
+        <name>getHoursForDiscount</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.long getHoursForDiscount()</function-signature>
+    </function>
+    <function>
+        <name>getMinutesForDiscount</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.long getMinutesForDiscount()</function-signature>
+    </function>
+    <function>
+        <name>getSecondsForDiscount</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.long getSecondsForDiscount()</function-signature>
+    </function>
+    <function>
+        <name>getRoundedValue</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.lang.Double getRoundedValue( java.lang.Double )</function-signature>
+    </function>
+    <function>
+        <name>getDateAfterDays</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.lang.String getDateAfterDays( java.lang.Integer )</function-signature>
+    </function>
+    
+    <function>
+        <name>getTimerHandler</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>com.veroniqa.jdo.TimerHandler getTimerHandler()</function-signature>
+    </function>
+    <function>
+        <name>getHoursForSale</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.long getHoursForSale()</function-signature>
+    </function>
+    <function>
+        <name>getMinutesForSale</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.long getMinutesForSale()</function-signature>
+    </function>
+    <function>
+        <name>getSecondsForSale</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.long getSecondsForSale()</function-signature>
+    </function>
+    <function>
+        <name>getBrandListForSale</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.Boolean getBrandListForSale()</function-signature>
+    </function>
+    <function>
+        <name>getThresholdValues</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.HashMap getThresholdValues()</function-signature>
+    </function>
+    <function>
+        <name>getThresholdSize</name>
+        <function-class>com.veroniqa.frontend.util.VeroniqaUtil</function-class>
+        <function-signature>java.util.int getThresholdSize()</function-signature>
+    </function>
+</taglib>    

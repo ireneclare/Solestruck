@@ -1,0 +1,1418 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+}
+.fl{ float:left;}
+.fr{ float:right;}
+.clear_both{ clear:both}
+/* old fonts in local start*/
+@font-face {
+  font-family: 'Nobile';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Nobile Bold Italic'), local('Nobile-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/nobile/v4/8W-pGzs1uCDalpRJL-f9DLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v6/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Inder';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inder'), local('Inder-Regular'), url(http://themes.googleusercontent.com/static/fonts/inder/v2/Gujua8e0nj1qJ9l_N1QOY6CWcynf_cDxXwCLxiixG1c.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/Zd2E9abXLFGSr9G3YK2MsNxB8OB85xaNTJvVSB9YUjQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/b9QBgL0iMZfDSpmcXcE8nPZRQUbYfRc-1FWT9T9EE8M.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('CinzelDecorative-Regular'), url(http://themes.googleusercontent.com/static/fonts/cinzeldecorative/v1/fmgK7oaJJIXAkhd9798yQoem3WQP60SwtMX1R01QT0U.woff) format('woff');
+}
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/fjallaone/v1/rxxXUYj4oZ6Q5oDJFtEd6r3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+/* old fonts in local end*/
+.kenzo_wrapper, .buffalo_wrapper, .drmartens_wrapper, .adidas_wrapper{
+	width:940px;
+	margin:0px auto;
+}
+.drmartens_wrapper{
+	padding-bottom:10px;
+}
+.kenzo_k{
+	background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/KenzoBrandImages/kenzo_k.png") no-repeat scroll center center transparent;
+    font-family: 'Nobile', sans-serif;
+    font-size: 19px;
+    line-height: 37px;
+    padding: 91px 0;
+    text-align: left;
+    width: 468px;
+}
+.kenzo_content{
+    color: #000000;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 17px;
+    text-align: left;
+    width: 455px;
+}
+.buffalo_content{
+	 color: #000000;
+   font-family: 'Inder', sans-serif;
+    font-size: 11px;
+    line-height: 19px;
+    padding-left: 17px;
+    text-align: left;
+    width: 455px;
+	text-transform:uppercase;
+	font-weight:700;
+}
+.kenzo_img_padding, .buffalo_img_padding, .adidas_img_padding, .drmartins_img_padding{ padding:30px 0px; display:inline-block;}
+#kenzo_street_img li{ float:left; padding-right:22px;}
+#adidos_street_img li{ float:left; padding-right:3px;}
+#kenzo_street_img li.last, .buffalo_sorter_img loi.last, #adidos_street_img li.last, #adidos_jere_street_img li.last{ padding:0px !important;}
+
+#buffalo_sorter_img li{ float:left; padding-right:7px;}
+#buffalo_heading{padding:45px 0px 20px;}
+
+
+.adidas_rig_still{ padding-left:35px;}
+.adi_video_wrapper{
+	background:url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/AdidasOriginalsXJeremyScott/adi_video_bg.png") no-repeat;
+	height:500px;
+	position:relative;
+}
+#adidos_jere_street_img li{ padding-right:14px ; float:left;}
+#adidas_video{
+    height: 236px;
+    position: absolute;
+    right: -220px;
+    top: 151px;
+    width: 410px;
+	background-color:#000000;
+}
+.drmart_content_wrp{
+	background:url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/DrMartensMadeInEngland/drmart_content_bg.png") no-repeat;
+	height:360px;
+	position:relative;
+}
+.drmart_content{
+	width: 688px;
+	padding: 20px;
+	text-align: left;
+	color: #ffffff;
+	font-size: 17px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400; 
+	line-height: 24px;
+	margin:0px 0px 0px 15px;
+}
+.drmart_content p{ 
+	padding:10px 0px;
+	opacity:0.9;
+	filter:alpha(opacity:0.9);
+	-moz-opacity:0.9;
+	-webkit-opacity:0.9;
+}
+.adidas_lf_content{
+	font-family: 'Cinzel Decorative', cursive;
+    font-size: 21px;
+    line-height: 30px;
+    width: 450px;
+}
+.dd{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	left: 108px;
+	position: absolute;
+	text-align: justify;
+	top: 103px;
+	width: 226px;
+	line-height: 22px;
+}
+.adidas_logo_bg{
+	background:url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/AdidasOriginalsXOpeningCeremony/adidas_logo.png") center no-repeat;
+	height:360px;
+	text-align:center;
+	position:relative;
+}
+.adidas_logo_bg div{
+ 	bottom: -10px;
+    font-family: 'Cinzel Decorative',cursive;
+    font-size: 40px;
+    left: 32%;
+    line-height: 53px;
+    position: absolute;
+}
+/**** currated landing page design start here******/
+.curroted_text{
+	font-style: italic !important;
+	margin: 20px 114px 30px !important;
+	padding: 25px 55px 50px !important;
+	position: relative !important;
+	text-align: center !important;
+	width: 620px !important;
+	font-family: 'Karla',sans-serif !important;
+	border-bottom: 5px solid #333 !important;
+}
+.curroted_text h1{
+	font-size: 35px !important;
+	float: none!important;
+	padding-top: 0!important;
+	border: 0!important;
+	padding-bottom: 8px!important;
+}
+.curroted_text p{
+	font-size: 17px;
+	color: #333;
+	line-height: 21px;
+}
+/**** currated landing page design end here******/
+/*united brand css here*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+.united_wrapper{
+	width:960px;
+	margin:0px auto;
+	font-family: 'Lato', sans-serif;
+	padding-bottom:20px;
+	margin-top:-20px;
+}
+.united_img_padding{ padding:15px 0px 20px;}
+.united_wrapper h2{
+	font-family: 'Lato', sans-serif !important;
+	font-size: 48px !important;
+    font-weight: 700 !important;
+    padding: 20px 0 7px !important;
+}
+.united_wrapper h3{
+	 color: #7FD6B0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    padding: 0 60px 35px;
+}
+.united_bg{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/United%20Nude/unidted_banner1.png) no-repeat;
+	height:504px;
+	position:relative;
+	margin-top:5px;
+}
+.united_bg div{
+	color: #FFFFFF;
+    font-size: 10px;
+    line-height: 24px;
+    position: absolute;
+    right: 50px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 336px;
+}
+.united_bg div p{
+	padding:25px 0px 0px;
+	}
+	.united_year ul li{
+		float:left;
+		padding: 15px 0 20px 14px;
+		width:300px;
+	}
+.united_year ul li h4{
+		 color: #F35FBA;
+		font-size: 72px;
+		font-weight: 700;
+		padding: 20px 0 0;
+	}
+.united_year ul li i{
+	border-bottom: 1px solid #7FD6B0;
+    color: #696668;
+    display: inline-block;
+    font-size: 14px;
+    height: 220px;
+    line-height: 23px;
+    padding: 5px 0 10px 45px;
+    text-align: left;
+    width: 210px;
+}
+.united_banner2{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/testing/united_banner2.png) no-repeat;
+	height:357px;
+	position:relative;
+}
+.united_banner2 div{
+    height: 240px;
+    left: 255px;
+    position: absolute;
+    top: 59px;
+    width: 464px;
+}
+.united_banner2 div h4{
+	font-size: 60px;
+    font-weight: 700;
+    padding: 45px 0 40px;
+}
+.united_banner2 div p{
+	font-size: 14px;
+    line-height: 24px;
+    padding: 0 0 0 53px;
+    text-align: left;
+}
+.united_content{
+	background-color: #000000;
+    padding: 70px 0;
+}
+.united_content h4{
+	font-size:36px;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-weight:700;
+	padding:35px 0 30px;
+}
+.united_content h6{
+	color: #7FD6B0;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 18px;
+    padding: 0 0 0 125px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.united_emptydiv{
+	height:90px;
+	background-color:#7FD6B0;
+}
+/* united brand css end here*/
+/* vagaband brand css end here*/
+@font-face {
+  font-family: 'Covered By Your Grace';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url(http://themes.googleusercontent.com/static/fonts/coveredbyyourgrace/v3/6ozZp4BPlrbDRWPe3EBGA03JHltKCypNUIe4PCGqKsSglnMp3_3A8V8Ai8YosRtX.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v6/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+.vagabond_wrapper{
+	width:960px;
+	margin:0px auto;
+}
+.vagabond_banner1{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Vagabond/vag_banner.jpg) no-repeat;
+	height:600px;
+	position:relative;
+	width:801px;
+}
+.vagabond_banner1 h3{
+	color: #FFFFFF;
+    font-family: 'Covered By Your Grace',cursive;
+    font-size: 39px;
+    font-style: italic;
+    line-height: 40px;
+    margin-top: 55px;
+    text-align: justify;
+    text-transform: uppercase;
+    width: 660px;
+}
+.vagabond_wrapper p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+    line-height: 18px;
+    padding: 10px 0px 0px;
+    text-align: justify;
+	width:800px;
+}
+.vagabond_banner2{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Vagabond/vag_banner3.jpg) no-repeat;
+	height:950px;
+	position:relative;
+	margin-top:18px;
+}
+.va_video{
+	top: 289px;
+	position: absolute;
+	left: 343px;
+}
+/* vagaband brand css end here*/
+/* unif brand css start here*/
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Permanent Marker'), local('PermanentMarker'), url(http://themes.googleusercontent.com/static/fonts/permanentmarker/v2/9vYsg5VgPHKK8SXYbf3sMmVSxyvLCPm9firj_jMeQtQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Scada';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Scada'), local('Scada-Regular'), url(http://themes.googleusercontent.com/static/fonts/scada/v1/_glb0C_Za9TUO0rliiKHkqCWcynf_cDxXwCLxiixG1c.woff) format('woff');
+}
+@font-face {
+  font-family: 'Scada';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Scada Bold'), local('Scada-Bold'), url(http://themes.googleusercontent.com/static/fonts/scada/v1/7GOX6HxeYisYUc-2bmBZNHYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+.unif_wrapper span{
+	 font-family: 'Scada',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 13px 0 22px 273px;
+}
+.unif_wrapper b{
+	font-family: 'Scada',sans-serif;
+    font-size: 12px;
+    margin: 18px;
+}
+.unif_wrapper h4{
+	font-family: 'Scada',sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 17px;
+    margin-left: 10px;
+    padding: 30px 140px 5px;
+    text-align: justify;
+	width:365px;
+}
+.unif_wrapper h5{
+	font-family: 'Scada', sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform:uppercase;
+	text-align:left;
+	padding-top:20px;
+	line-height:15px;
+}
+.unif_wrapper h6{
+	font-family: 'Scada', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	text-align:justify;
+	line-height:17px;
+	padding-top:3px;
+}
+.unif_wrapper{
+	width:960px;
+	margin:0px auto;
+}
+.unif_banner{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/UNIF/unit_txt_bg.png) no-repeat;
+	height:190px;
+}
+.unif_banner h3{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 49px;
+	font-weight: 400;
+	padding-top: 25px;
+}
+.unif_banner p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	padding: 15px 40px;
+}
+.unif_banner1{
+	position:relative;
+}
+.unif_lf_img{ margin-top:3px;}
+.unif_lf_img li{
+	margin:17px 0px 0px;
+}
+.unif_img_bg{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/UNIF/unif_img_bg.png) no-repeat;
+	height:440px;
+}
+.unif_img_bg ul{ list-style:none;}
+.unif_img_bg ul li{ 
+	 float: left;
+    list-style: none outside none;
+    padding: 21px 3px 21px 36px;
+}
+/* unif brand css end here*/
+/* Miista brand css start here*/
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Asap'), local('Asap-Regular'), url(http://themes.googleusercontent.com/static/fonts/asap/v1/nvGvEwsMAvkIa6w2U-PXffesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Asap Bold'), local('Asap-Bold'), url(http://themes.googleusercontent.com/static/fonts/asap/v1/QGN0GG0540fyG6NL_PpOpgLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Asap';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Asap Bold Italic'), local('Asap-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/asap/v1/_sVKdO-TLWvaH-ptGimJBbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+.miista_wrapper{
+	width:960px;
+	margin:0px auto;
+	font-family: 'Asap', sans-serif;
+}
+.miista_wrapper h3{
+	color: #312B2D;
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 77px 0 10px 30px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 456px;
+}
+.miista_wrapper p{
+	 color: #312B2D;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+}
+.miista_txt1{
+	padding: 30px;
+    position: absolute;
+    right: 30px;
+    top: 350px;
+    width: 370px;
+}
+.miista_txt1 h4, .miista_txt3 h4{
+	color: #928C8E;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 18px;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+	text-align:left;
+}
+.miista_txt2{
+    left: 28px;
+    padding:20px 30px 30px 30px;
+    position: absolute;
+    top: 15px;
+    width: 255px;
+}
+.miista_txt2 h4, .miista_txt4 h4, .miista_txt5 h4{
+	color: #ffffff;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 18px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+	text-align:left;
+}
+.miista_txt3{
+    padding: 30px 30px 20px;
+    position: absolute;
+    right: 29px;
+    top: 408px;
+    width: 500px;
+}
+.miista_txt3 h4{ 
+	width:190px;
+	padding-right:20px !important;
+}
+.miista_txt3 p{ width:272px;}
+.miista_txt4{
+	padding:20px 30px 30px;
+    position: absolute;
+    right: 29px;
+    top: 275px;
+    width: 466px;
+}
+.miista_txt5{
+	left: 29px;
+    padding: 20px 30px 30px 50px;
+    position: absolute;
+    top: 780px;
+    width: 467px;
+}
+.miista_txt5 p{
+	color:#ffffff;
+}
+.miista_paragraps{ padding-top:25px;}
+.miista_bg1{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Miista/miista1.jpg) no-repeat scroll center center transparent;
+	height:677px;
+	position:relative;
+}
+.miista_bg2{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Miista/miista2.jpg) no-repeat scroll center center transparent;
+	height:595px;
+	position:relative;
+}
+.miista_bg3{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Miista/miista3.jpg) no-repeat scroll center center transparent;
+	height:1085px;
+	position:relative;
+}
+/* Miista brand css end here*/
+/* Ktz brand css start here*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+.ktz_wrapper{
+	width:960px;
+	margin:0px auto;
+	font-family: 'Lato', sans-serif;
+}
+.ktz_banner{
+	background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/ktz/ktz_bg.jpg") no-repeat scroll center top transparent;
+    height: 1374px;
+}
+.ktz_content{
+    padding: 20px 25px 10px 85px;
+}
+.ktz_content h3{
+	font-size: 14px;
+    line-height: 19px;
+    padding-left: 35px;
+    padding-top: 22px;
+    width: 385px;
+	font-weight:400;
+}
+.ktz_img{
+	display: inline-block;
+    list-style: none outside none;
+    margin: 50px 0 0;
+}
+.ktz_img li{
+	float: left;
+    height: 356px;
+    margin: 1px;
+    width: 317px;
+}
+.ktz_img li.rg{
+	padding:0px !important;
+}
+.ktz_img li span{
+	color: #FFFFFF;
+    display: table-cell;
+    font-size: 48px;
+    height: 356px;
+    text-align: center;
+    vertical-align: middle;
+    width: 316px;
+	font-weight:300;
+}
+.ktz1{
+	background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/ktz/ktz1.jpg") no-repeat scroll center top transparent;
+}
+.ktz2{
+	background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/ktz/ktz2.jpg") no-repeat scroll center top transparent;
+}
+.ktz3{
+	background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/ktz/ktz5.jpg") no-repeat scroll center top transparent;
+}
+.ktz4{
+	background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/ktz/ktz4.jpg") no-repeat scroll center top transparent;
+}
+.ktz5{
+	background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/ktz/ktz3.jpg") no-repeat scroll center top transparent;
+}
+.ktz6{
+	background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/ktz/ktz6.jpg") no-repeat scroll center top transparent;
+}
+/* Ktz brand css end here*/
+/* Bolshie brand css start here*/
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/qpy-UiLNKP-VfOdbcs6r6-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/bH7276GfdCjMjApa_dkG6bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+.bolshie_wrapper{
+	width:960px;
+	margin:0px auto;
+	font-family: 'Oswald', sans-serif;
+}
+.bolshie_banner{
+	background:url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Bolshie/bolshie.gif") no-repeat;
+	height:650px;
+}
+.balshie_bg{
+	background:url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Bolshie/bols_bg.jpg") repeat;
+	padding-bottom:40px;
+}
+.balshie_bg h3{
+	font-size: 18px;
+	color: #333333;
+	text-transform: uppercase;
+	width: 330px;
+	padding: 40px 20px;
+	background-color: #7beea7;
+	font-weight: 700;
+	line-height: 23px;
+	margin:70px 0px;
+}
+.balshie_bg img{padding-bottom:15px;}
+.balshie_bg h4{
+	color:#333333;
+	font-size:20px;
+	text-align:center;
+	background-color:#eff150;
+	padding:45px 0px 40px;
+	text-transform:uppercase;
+	font-weight:bold;
+	line-height:26px;
+	margin-bottom:15px;
+	
+}
+/* Bolshie brand css end here*/
+/* Degen brand css Start here*/
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(http://themes.googleusercontent.com/static/fonts/quicksand/v2/sKd0EMYPAh5PYCRKSryvW7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(http://themes.googleusercontent.com/static/fonts/quicksand/v2/32nyIRHyCu6iqEka_hbKsqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+.degen_wrapper{
+	width:960px;
+	margin:0px auto;
+	font-family: 'Quicksand', sans-serif;
+}
+.degen_in_wrapper{
+	width:700px;
+}
+.degen_header_content{
+	font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+	display:inline-block;
+}
+.degen_header_content div{
+	padding-left:33px;
+    padding-top:45px;
+    width: 200px;
+	position:relative;
+}
+.org_dimond{
+	width:125px;
+	height:22px;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Degen/org_dimond.jpg) no-repeat;
+	position:absolute;
+	top:20px;
+	left:50px;
+}
+.degen_header_content span, .degen_holder span{ color:#ff491f}
+.degen_holder{
+	display: inline-block;
+    padding: 40px 0 0;
+}
+.degen_holder h3{
+	color: #FF491F;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 17px 0 0 -33px;
+    text-transform: uppercase;
+}
+.degen_in_wrapper h6{
+	font-size: 14px;
+    text-align: justify;
+	line-height:20px;
+	padding:25px 30px;
+}
+.degen_content span{
+	font-weight:700;
+	color:#ff491f;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Degen/yellow_dimond.png) 4px center no-repeat;
+	padding-left:20px;
+}
+.shoe_holder_top{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Degen/shoe_holder_top.png) no-repeat;
+	height: 4px;
+    margin: 0 0 0 -30px;
+    width: 473px;
+}
+.shoe_holder_bottom{
+	border-bottom: 1px solid #ffce40;
+    height: 1px;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 400px;
+}
+.degen_holder strong{
+	color:#000000 !important;
+	font-style:normal !important;
+}
+.degen_holder p{
+	font-size:11px;
+	color:#000000;
+	text-transform:none;
+	font-style:normal;
+}
+.degen_holder h4{
+	font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 30px 20px 20px;
+}
+.degne_video_bg{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Degen/video_bg.png) no-repeat;
+	width:703px;
+	height:750px;
+}
+/* Degen brand css end here*/
+/* Bernhard Willhelm brand css start here*/
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/Zd2E9abXLFGSr9G3YK2MsNxB8OB85xaNTJvVSB9YUjQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/b9QBgL0iMZfDSpmcXcE8nPZRQUbYfRc-1FWT9T9EE8M.woff) format('woff');
+}
+.Bernhard_wrapper{
+	width:960px;
+	margin:0px auto;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.Bernhard_banner{
+	/*background: url("http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/ktz/ktz_bg.jpg") no-repeat scroll center top transparent;
+    height: 1374px;*/
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/bgs.jpg) center top no-repeat;
+	height:1190px;
+	 
+}
+.Bernhard_banner h3{
+	color: #6BCCFF;
+    font-size: 26px;
+    font-weight: 700;
+    left: 162px;
+    line-height: 24px;
+    padding-top: 22px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 710px;
+    width: 650px;
+	text-align:center;
+}
+.Bernhard_banner h5{
+	 color: #351E1E;
+    font-size: 13px;
+    font-weight: 700;
+    left: 162px;
+    line-height: 24px;
+    padding: 20px 0 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 790px;
+    width: 650px;
+	text-align:center;
+}
+
+/*no remove code*/
+#demo-illustration a {
+	color: blue;
+	text-decoration: underline;
+	cursor:default;
+}
+
+#demo-illustration {
+	position: relative;
+	width:960px;
+	min-height:1810px;
+}
+
+#bernard1, #bernard2, #bernard3, #bernard4,
+#bernard5, #bernard6, #bernard7, #bernard8,
+#bernard9, #bernard10, #bernard11, #bernard12,
+#bernard-greyed {
+	height: 448px;
+	width: 320px;
+	position: absolute;
+	left: 180px;
+}
+
+#bernard1{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a1.jpg) no-repeat 0 0;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#bernard2{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a2.jpg) no-repeat 0 0;
+	position:absolute;
+	top:0px;
+	left:320px;
+}
+#bernard3{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a3.jpg) no-repeat 0 0;
+	top:0px;
+	left:640px;
+}
+#bernard4{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a4.jpg) no-repeat 0 0;
+	top:448px;
+	left:0px;
+}
+#bernard5{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a5.jpg) no-repeat 0 0;
+	top:448px;
+	left:320px;
+}
+#bernard6{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a6.jpg) no-repeat 0 0;
+	top:448px;
+	left:640px;
+}
+#bernard7{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a7.jpg) no-repeat 0 0;
+	top:896px;
+	left:0px;
+}
+#bernard8{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a8.jpg) no-repeat 0 0;
+	top:896px;
+	left:320px;
+}
+#bernard9{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a9.jpg) no-repeat 0 0;
+	top:896px;
+	left:640px;
+}
+#bernard10{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a10.jpg) no-repeat 0 0;
+	top:1344px;
+	left:0px;
+}
+#bernard11{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a11.jpg) no-repeat 0 0;
+	top:1344px;
+	left:320px;
+}
+#bernard12{
+	z-index: 1;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/a12.jpg) no-repeat 0 0;
+	top:1344px;
+	left:640px;
+}
+#bernard-greyed {
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm//b1.jpg) no-repeat 0 0;
+	width: 0;
+	position: absolute;
+	
+}
+#bernard-greyed .greyed {
+	display: block;
+	height: 100px;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+
+#demo-methods {
+	overflow: hidden;
+}
+#demo-methods a {
+	display: block;
+	cursor: pointer;
+	float: left;
+	clear: both;
+}
+#demo-methods a::selection {
+	background: transparent;
+	color: inherit;
+}
+
+#demo-properties .currentFrame,
+#demo-properties .frameWidth,
+#demo-properties .frameHeight,
+#demo-properties .isPlaying,
+#demo-properties .totalFrames,
+#demo-properties .frameRate {
+	display: block;
+}
+.codesone{
+	 background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/co1.png) no-repeat scroll 0 0 transparent;
+    height: 37px;
+    left: 90px;
+    position: absolute;
+    top: 430px;
+    width: 730px;
+    z-index: 2;
+	
+}
+.codestwo{
+	 background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/co2.png) no-repeat scroll 0 0 transparent;
+    height: 37px;
+    left: 90px;
+    position: absolute;
+    top: -15px;
+    width: 730px;
+    z-index: 2;
+	
+}
+.codesthree{
+	 background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/co3.png) no-repeat scroll 0 0 transparent;
+    height: 40px;
+    left: 73px;
+    position: absolute;
+    top: 872px;
+    width: 781px;
+    z-index: 2;
+	
+}
+.codesfour{
+	 background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/co4.png) no-repeat scroll 0 0 transparent;
+   height: 62px;
+    left: 50px;
+    position: absolute;
+    top: 1304px;
+    width: 782px;
+    z-index: 2;
+	
+}
+.codesfive{
+	 background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/BernhardWillhelm/co1.png)  scroll 0 0 transparent;
+   height: 37px;
+    left: 0;
+    position: absolute;
+    top: 1765px;
+    width: 960px;
+    z-index: 2;
+	
+}
+/* Bernhard Willhelm brand css end here*/
+/* To BE Announced (TBA) brand css start here*/
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(http://themes.googleusercontent.com/static/fonts/notosans/v1/LeFlHvsZjXu2c3ZRgBq9nLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oleo Script Swash Caps';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oleo Script Swash Caps'), local('OleoScriptSwashCaps-Regular'), url(http://themes.googleusercontent.com/static/fonts/oleoscriptswashcaps/v1/vdWhGqsBUAP-FF3NOYTe4pakf2VKGDa1aHLWGf__tlnr7w4p9aSvGirXi6XmeXNA.woff) format('woff');
+}
+.tba_wrapper{
+	width:960px;
+	margin:0px auto;
+}
+.tba_banner{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Tba/tba_banner.jpg) no-repeat;
+	height:749px; 
+	font-family: 'Noto Sans', sans-serif;
+	text-align: left;
+	color: #ffffff;
+	font-size: 14px;
+	padding:25px 0px 0px 20px;
+	line-height:17px;
+	position:relative;
+}
+.tba_banner1{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Tba/tba_banner1.jpg) no-repeat;
+	font-family: 'Noto Sans', sans-serif;
+	text-align: left;
+	color: #333333;
+	font-size: 14px;
+	line-height: 17px;
+	height: 400px;
+	padding: 30px 0px 0px 333px;
+}
+.tba_banner h5{
+	position: absolute;
+	right: 111px;
+	top: 275px;
+	font-size: 36px;
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+.tba_wrapper h3{
+	font-size: 64px;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	color:#000000;
+	text-align:center;
+	padding:30px 0px 25px;
+}
+.tba_img{
+	margin-bottom:15px;
+}
+/* To Be Announced brand css end here*/
+/* Martinez Lierah css start here*/
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v6/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+.Martinez_wrapper{
+	width:960px;
+	margin:0px auto;
+}
+.Martinez_wrapper p{
+	color: #858585;
+    font-family: 'Raleway',sans-serif;
+    font-size: 11px;
+    line-height: 25px;
+    padding: 20px 160px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.Martinez_img{
+	margin-bottom:15px;
+	padding:0px 47px;
+}
+.Martinez_img1{
+	margin-bottom:15px;
+	padding:35px 40px;
+}
+.Martinez_logo{
+	padding:45px 0px 55px;
+}
+.martinez_line1{
+	  background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Martinez/line1.jpg) repeat-x scroll 0 10px transparent;
+    display: inline-block;
+    padding: 20px 433px;
+}
+.martinez_line2{
+	  background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Martinez/line2.jpg) repeat-x scroll 0 37px transparent;
+    display: inline-block;
+    padding: 43px 433px;
+}
+/* Martinez Lierah css end here*/
+/* monster_wrapper css start here*/
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jura Regular'), local('Jura-Regular'), url(http://themes.googleusercontent.com/static/fonts/jura/v4/1sCPU5CVs39F-CcTHpNRm_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+.monster_wrapper{
+	width:960px;
+	margin:0px auto;
+}
+.monster2{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Monster/monster2.jpg) repeat-x scroll 0 0px transparent;
+	height:969px;
+	position:relative;
+}
+.monster2 span{
+	bottom: 30px;
+    color: #FFFFFF;
+    font-family: 'Jura',sans-serif;
+    font-size: 12px;
+    left: 50px;
+    line-height: 28px;
+    position: absolute;
+    text-align: left;
+    text-transform: uppercase;
+    width: 324px;
+}
+/* monster_wrapper css end here*/
+/* raf code start here*/
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/Zd2E9abXLFGSr9G3YK2MsNxB8OB85xaNTJvVSB9YUjQ.woff) format('woff');
+}
+.raf_wrapper{
+	width:960px;
+	margin:0px auto;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Raf/raf_bg.jpg) no-repeat;
+	padding-top:175px;
+	font-family: 'Roboto Condensed';
+}
+.raf{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Raf/white_bg.png) repeat;
+    padding: 25px 0 60px;
+    width: 865px;
+	margin-bottom:58px;
+}
+.raf_content{
+	height: 506px;
+    margin: 42px 0 0 25px;
+    text-align: left;
+    width: 380px;
+	border-bottom:1px solid #000000;
+}
+.raf_content h3{
+	font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 0 40px;
+}
+.raf_content p{
+	font-size: 12px;
+    font-weight: bold;
+    line-height: 19px;
+    padding-bottom: 15px;
+}
+.raf_content h4{
+	padding-bottom:20px; 
+	font-weight:bold; 
+	font-size:15px;
+}
+/* raf code start here*/
+/* idp_wrapper code start here*/
+.idp_wrapper{
+	padding-bottom:60px;
+}
+/* idp_wrapper end code here*/
+/* YES code start here*/
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/Zd2E9abXLFGSr9G3YK2MsNxB8OB85xaNTJvVSB9YUjQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/b9QBgL0iMZfDSpmcXcE8nPZRQUbYfRc-1FWT9T9EE8M.woff) format('woff');
+}
+.YES_wrapper{
+	width:960px;
+	margin:0px auto;
+	font-family: 'Roboto Condensed';
+	font-weight:bold;
+}
+.YES_wrapper h4{
+	 border: 3px solid #000000;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 29px;
+    margin: 15px;
+    padding: 5px 10px;
+    text-align: left;
+}
+.content_box1{
+	border: 3px solid #000000;
+    font-style: italic;
+    margin: 15px 0 0;
+    padding: 0 20px;
+    text-align: left;
+    width: 555px;
+}
+.content_box1 h6{
+	font-size: 20px;
+    margin: 5px 0 15px;
+    padding-left: 80px;
+}
+.content_box1 h3{
+	font-size: 42px;
+    line-height: 42px;
+    margin: 0 0 25px;
+}
+.content_box{
+	border: 3px solid #000000;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 20px 10px 0 20px;
+    padding: 0 20px;
+    text-align: left;
+	font-weight:bold;
+}
+.content_box h6{
+	font-size:20px;
+	margin:15px 0px;
+	line-height:25px;
+}
+.content_box h3{
+	font-size: 153px;
+    margin: 0px 0 20px;
+}
+.content_box h1{
+	font-size: 92px;
+    margin: -33px 0 0;
+	color:#000000;
+}
+.YES_wrapper h5{
+	 font-size: 110px;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 20px 0 15px 62px;
+    text-align: center;
+}
+/* YES code end here*/
+/* Clae code start here*/
+@font-face {
+  font-family: 'Nobile';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nobile'), local('Nobile-Regular'), url(http://themes.googleusercontent.com/static/fonts/nobile/v4/BdG5WJmB9CCPn6im5Y8A5OvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+.clae_wrapper{
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Clae/clae_bg.jpg) no-repeat;
+	width:914px;
+	margin:75px auto 0px;
+	position:relative;
+	font-family: 'Nobile', sans-serif;
+	padding-bottom:100px;
+}
+.clae_logo{
+	left: 30px;
+    position: absolute;
+    top: -50px;
+}
+.clae_banner{
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Clae/clae_banner.jpg) no-repeat scroll 45px 92px;
+    height: 642px;
+}
+.clae_banner h3{
+	 background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/testing/images/Clae/clae_txtbg.png) repeat scroll 0 0;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 470px 0 0;
+    padding: 15px;
+    text-align: left;
+    width: 660px;
+}
+/* Clae code end here*/
+/* BLACK MILK code end here*/
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anton'), url(http://themes.googleusercontent.com/static/fonts/anton/v3/4ccCHjovctZoFjdBOHBY_6CWcynf_cDxXwCLxiixG1c.woff) format('woff');
+}
+.blackmilk_wrapper{
+	width:960px;
+	margin:0px auto;
+	font-family: 'Droid Sans', sans-serif;
+	padding-bottom:20px;
+}
+.who_even{
+	background:#000000; 
+	padding:20px; 
+	margin:30px 0 25px;
+}
+.who_even h2{
+	color: #FFFFFF;
+	font-family: 'Anton',sans-serif;
+	font-size: 70px;
+	font-weight: normal;
+	margin: -20px 0 0;
+	padding: 20px 0px 15px 0px;
+}
+.who_even p{
+	color:#ffffff; font-family: 'Droid Sans', sans-serif; 
+	font-weight:400;
+	font-size:15px;
+	color:#ffffff;
+	line-height:20px;
+	margin:20px 0px;
+}
+.blackmilk_txt{
+	 background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Anton',sans-serif;
+    font-size: 51px;
+    height: 196px;
+    margin: 15px 0 0 15px;
+    padding: 22px 0 0 40px;
+    width: 592px;
+	font-weight:normal; 
+	line-height: 80px;
+}
+.necessary{
+	font-family: 'Anton',sans-serif;
+	font-size: 56px;
+	font-weight:normal;
+	line-height:65px;
+}
+/* BLACK MILK code end here*/
+
+
+

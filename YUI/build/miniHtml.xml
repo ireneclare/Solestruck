@@ -1,0 +1,10 @@
+<project name="html minifier">
+	
+	<target name="execute" description="run the project">     
+	     <java jar="miniHtml.jar" failonerror="true" fork="true">
+	       <arg value="/originalpages/"/>
+	       <arg value="/war/pages/"/>    
+	     </java>     
+	  </target>
+	<!-- provide absolute paths of the folders -->
+</project>

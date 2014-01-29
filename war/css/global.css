@@ -1,0 +1,1254 @@
+/* CSS Document */
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/Zd2E9abXLFGSr9G3YK2MsNxB8OB85xaNTJvVSB9YUjQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/b9QBgL0iMZfDSpmcXcE8nPZRQUbYfRc-1FWT9T9EE8M.woff) format('woff');
+}
+
+body { background: #fff;  font-family: Arial; font-size:12px; overflow-x:hidden; }
+.clear_both { clear: both; }
+.no_right_margin { margin-right: 0px !important;}
+.top_bar{ background:#000000; }
+
+.banner {
+	height: 650px;
+	padding: 0px;	
+	overflow:hidden;
+	position:relative;
+	display:block;
+	/* left:50%;
+	margin:0px 0px 0px -1000px; */
+	margin:0px auto;
+	width:none;
+}
+#bannerForVideo{
+	margin: 0px auto;
+	/* position: relative; */
+}
+#mySlider{
+		width: 2000px;
+		height: 650px;
+		left: 50%;
+		position: absolute;
+		margin-left: -1000px;
+	}
+.banner a {
+	height: 650px;
+	display:block;	
+}
+.banner img {
+	left: 50%;
+    position: absolute;
+    margin-left:-1000px;
+}
+
+#wrapper, .global_nav_holder { width: 960px; margin: 0px auto; position: relative; }
+.global_nav_holder { background:#000000;}
+#header_wrapper {
+	width: 960px;
+	margin: 0px auto;	padding: 16px 0px 0px 0px;
+}
+#header { width: 960px; }
+#logo {
+	display: block;
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/FBLive/images/Solestrucklogo-new.png) no-repeat;
+	width: 259px;	height: 48px;
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+#header_right_nav { float: right; margin: 0px; *width:422px;}
+#header_right_nav ul { padding: 0px 0px 20px 0px; }
+#header_right_nav ul li {
+	float: left;
+	font-family: Arial;  font-size: 10px; 	font-weight: normal;	color: #4e4949;
+}
+
+#header_right_nav ul li a {
+	text-decoration: none;	color: #4e4949;	font-size: 10px;  font-weight: normal;
+}
+.seperator { padding: 0px 10px 0px 10px; color: #e8e8e8 !important; }
+.seedetails{
+	text-decoration:underline !important; 
+	padding:10px 0px 15px 10px;
+	font-size: 12px;
+	color: #b2b2b2;	
+	cursor: pointer;
+	float:left;
+}
+#header_right_nav a,
+#header_right_nav span{	
+	font-size: 12px;
+	color: #b2b2b2;	text-decoration: none;
+	cursor: pointer;
+	float:left;
+	padding:10px 0px 15px 0px;
+}
+#header_right_nav span { padding:5px 8px 0px 0px !important; margin:0px 0px 8px 0px; }
+#header_right_nav a.see_details {
+	display: block;
+	font-family: Tahoma;	font-size: 10px;	font-weight: bold;	color: #D96663;	text-decoration: none;
+	margin: 3px 0px 0px 120px;
+}
+
+.whislist_shoe_price .wishListItemAdded {
+	font-family: Tahoma;	font-size: 12px;	font-weight: bold;	color: #4AA02C;
+	display: none;
+}
+
+h1 {font-size:36px; padding:25px 0px 20px 0px !important;  border-bottom: 1px solid #EEEEEE !important; float:none !important; font-weight:bold; color: #333333; }
+.nb { border: none !important; text-transform:uppercase !important; }
+.np { padding: 0px !important; }
+.ntp { padding-top:0px !important; }
+.nm { margin:0px !important; }
+.fl { float:left; }
+.fr { float: right !important; }
+.nbp { padding-bottom: 0px !important; }
+.login_link{margin-top:-3px;}
+
+/**** menu drop down ****/
+.global_nav { float: left;  margin: 0px 0px 0px 0px; overflow: visible; }
+.holiday_btn {background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/holiday_btn.png) no-repeat; margin:0px 14px 0px 0px; cursor:pointer; width:162px; font-family:arial; font-size:12px; font-weight:normal !important; color:#fff; text-align:center; line-height:37px;}
+.fortyeight_btn {background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/fortyeight_logo_in_SS.gif) no-repeat !important; right: 190px; margin: 0 14px 0 30px; cursor: pointer; width: 132px; font-family: arial; font-size: 12px; font-weight: normal!important; color: white; text-align: center; height: 37px; position: absolute;}
+.cart_nav { float:right; } 
+.global_nav { margin: 0px 0px 0px 8px; }
+.global_nav ul li, 
+.cart_nav ul li {
+	float: left;
+	font-family: Arial;	  font-size: 12px;	 font-weight: bold;	color: #fff;
+	z-index: 100 !important;
+ }
+
+.global_nav ul li a, 
+.cart_nav ul li a {
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/ss_icon1.png) right -244px no-repeat;
+	font-family: Arial;		font-size: 12px;	font-weight:bold;	color: #fff;	line-height:37px;
+	text-decoration: none;
+	padding: 0px 18px 0px 0px;
+	position: relative;
+	z-index: 500 !important;
+}
+.global_nav ul li a:hover, .cart_nav ul li a:hover { color: #e2bf52; }
+.border_none { border: none !important; }
+.global_nav_seperator { display:block; width:16px; height:37px; }
+.global_nav ul li a.no_background, 
+.cart_nav ul li a.no_background  {  padding:0px; }
+.no_background { background: none !important; }
+.global_nav ul li div.level1, 
+.cart_nav ul li div.level1 { /*	visibility:hidden; */
+	background:#fff;
+	display: none;
+	_display: inherit;
+	_visibility: hidden;
+	position: absolute;
+	top: 37px;	padding: 0px 0px 12px 5px;
+	/* left:50%; */
+	z-index: 9999 !important;
+	border: solid #d9d9d9;		border-width: 0px 4px 4px 4px;
+}
+
+#women .nav_arrow { left:23px !important; }
+#men .nav_arrow { left:95px !important;}
+#vintage .nav_arrow { left:130px !important; }
+#sale .nav_arrow { left:125px !important; }
+#account .nav_arrow { left:51px !important; }
+#currency_converter .nav_arrow { right:40px !important; }
+
+#blog .nav_arrow { left:67px !important; }
+#features .nav_arrow { left:85px !important; }
+.global_nav ul li a.drop_down:hover, 
+.global_nav ul li.select_nav:hover a.drop_down,
+.cart_nav ul li a.drop_down:hover, 
+.cart_nav ul li.select_nav:hover a.drop_down  {
+	 background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/ss_icon1.png) right -244px no-repeat; 
+	 color: #e2bf52;	
+	 z-index: 501 !important;
+}
+/* #features { left:380px;} */
+.global_nav ul li div#features {padding: 0 5px 12px 5px !important; }
+#features .cult1 {
+	padding:20px 20px 10px 0px;
+}
+
+
+#blog { margin-left:-58px;}
+.global_nav ul li div#blog {padding: 0 5px 12px 5px !important; }
+#blog .cult1 {
+	padding:20px 20px 10px 0px;
+}
+#blog .cult1, #blog .cult2, #features .cult1{
+	float:none;
+	border-bottom:1px solid #e2e2e2;
+}
+ #blog .cult2 {
+ 	border-bottom:none;
+ }
+.global_nav ul li:hover div.level1,
+.global_nav ul a:hover div.level1,
+.cart_nav ul li:hover div.level1, 
+.cart_nav ul a:hover div.level1 {
+	/*visibility:visible; */
+	display: block;
+	_display: inherit;
+	_visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 300ms;
+}
+.global_nav ul :hover div.level1, 
+.cart_nav ul :hover div.level1 { /* visibility:hidden;*/
+	display: none;
+	_display: inherit;
+	_visibility: hidden;
+}
+.global_nav ul :hover div.level1 :hover div.level1, 
+.cart_nav ul :hover div.level1 :hover div.level1 {
+	/* visibility:visible; */
+	display: block;
+	_display: inherit;
+	_visibility: visible;
+}
+.global_nav ul li div#vintage ul li a, 
+.cart_nav ul li div#vintage ul li a {
+	display: block;
+}
+.global_nav ul li div.level1 ul, 
+.cart_nav ul li div.level1 ul {
+	padding: 20px 20px 0px 0px;	#padding: 20px 15px 0px 0px;	margin:0px;
+	float: left;
+	
+}
+#features.level1{margin-left:-63px;}
+#men ul, #women ul{ width:182px; }
+.global_nav ul li div.level1 ul li, 
+.cart_nav ul li div.level1 ul li {
+	padding: 0px 0px 5px 13px;
+	float: none;
+	display: block;
+}
+#men { margin-left:-92px; }
+#women {margin-left:-10px;}
+
+.global_nav ul li div.level1 ul li:hover a, 
+.cart_nav ul li div.level1 ul li:hover a {
+	color: #e2bf52;
+	cursor: pointer;
+	display: block;
+}
+
+.global_nav ul li div.level1 ul li:hover, 
+.cart_nav ul li div.level1 ul li:hover {
+	cursor: pointer;
+}
+
+.global_nav ul li div.level1 ul li a, 
+.cart_nav ul li div.level1 ul li a {
+	font-family: Arial;		font-size: 12px;	color: #4e4949;	text-decoration: none;	line-height:normal;	line-height:15px;
+	background: none;
+	padding: 0px 0px 0px 0px;
+	float: none;
+	cursor: pointer;
+	border: none;
+	display: block;
+	width:100%;
+	text-transform:capitalize;
+}
+
+.global_nav ul li div.level1 ul li a:hover, 
+.cart_nav ul li div.level1 ul li a:hover {
+	color: #e2bf52;
+	padding: 0px 0px 0px 0px;
+	border: none;		border-width: 0px 0px 0px 0px !important;
+}
+.currency_conv {
+	padding: 0 18px 0 21px !important;
+}
+.currency_conv code  {
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/FBTesting/images/currency_flag.png) no-repeat !important;
+	width:16px;
+	height:11px;
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	
+}
+
+.cart_nav ul li div#account { margin-left:-28px; padding:0px 0px 15px 5px !important; }
+.cart_nav ul li div#currency_converter { right:-10px; padding:0px 0px 15px 5px !important;  }
+.search_box { float: right; margin: 5px 0px 0px 0px; position:relative;  }
+.search_input_box {
+	float: left;
+	width: 360px;	height: 29px;	#height: 22px;	height: 22px\9;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 3px 0px 0px 3px;	-webkit-border-radius: 3px 0px 0px 3px;	border-radius: 3px 0px 0px 3px;
+	padding: 0px 0px 0px 30px;	#padding: 7px 0px 0px 30px;		padding: 7px\9 0px\9 0px\9 30px\9;
+}
+.search_box code {
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px -449px no-repeat;
+	height:30px;	width:30px;
+	position:absolute;
+	left:0px;
+}
+.nav_arrow { 
+	position:absolute;
+	height:5px;
+	width:10px;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/ss_icon1.png) -10px -343px no-repeat;
+	display:block;
+	top:-4px;
+	margin:0px 0px 0px 0px;  
+}
+.sale_col1, .sale_col2 { margin:20px 0px 0px 0px; padding:0px 10px 0px 10px; }
+.sale_col1 { border-right:1px solid #d9d9d9; }
+.sale_col1 ul, .sale_col2 ul { padding:0px 20px 0px 5px !important; margin:20px 0px 0px 0px !important; }
+
+.global_nav ul li div#vintage { padding:0px 0px 12px 0px !important; margin:0px 0px 0px -5px; *margin-left:-182px !important; margin-left: -113px;}
+.global_nav ul li div#sale { padding:0px 0px 12px 0px !important; margin:0px 0px 0px 0px; margin-left:-118px; }
+.global_nav ul li div#new-arrivals { *margin-left:-175px !important; margin-left: -128px;}
+#new-arrivals .nav_arrow { left:135px !important; }
+.sale_col1 a, .sale_col2 a {  
+    display: block !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    text-align: center !important;
+	background:none !important;
+	padding:0px !important;
+	line-height:normal !important;
+	font-weight:normal !important;
+	cursor:pointer;
+	text-decoration:none !important;
+}
+.sale_col1 h2 a, .sale_col2 h2 a 
+{
+	display:block;
+	color:black!important; 
+	text-align:center; 
+	font-size:13px; 
+	font-weight:bold !important; 
+	cursor:pointer !important; 
+}
+.sale_col1 h2 a:hover, .sale_col2 h2 a:hover { color:#e2bf52 !important; }
+.blog_divider {
+	border-bottom:1px solid #d9d9d9;
+	height:1px;
+	width:115px;
+	margin:15px 0px 0px 10px;
+}
+#blog h2, #currency_converter h2 {
+	padding:0px 0px 5px 0px;
+	font-weight:bold;
+	font-size:14px !important;
+	color:#4e4949;
+}
+#currency_converter h2 { text-align:center; font-size:12px; }
+#currency_converter ul li { text-align:right; }
+.currency b { font-size:16px; display:block; padding:0px 5px 0px 0px; }
+.currency  span { font-size:10px; display:block; }
+.currency:hover b { color:#fff; }
+#currency_converter span { color:#999999 !important; font-size:10px !important; }
+#currency_converter b { font-size:16px; padding:0px 5px 0px 0px; color:#000 !important;  }
+
+/*************************** Tool Tip ***********************************/
+
+
+.tipsy { padding: 5px; font-size: 11px; position: absolute; z-index: 999999; line-height:18px; top:20px; }
+.tipsy-inner { 
+	padding: 5px 8px 4px 8px; 
+	background-color: black; 
+	max-width: 200px;	 
+	text-align: center;	color: white; 
+	border-radius:3px;
+	-moz-border-radius:3px;	 -webkit-border-radius:3px;	 border-radius:3px;
+	
+}
+/*.tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }*/
+.tipsy-arrow { position: absolute; background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/tipsy.gif) no-repeat top left; width: 9px; height: 5px; }
+.tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -4px; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; }
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; }
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -4px; background-position: bottom left; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; background-position: bottom left; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; background-position: bottom left; }
+.tipsy-e .tipsy-arrow { top: 50%; margin-top: -4px; right: 0; width: 5px; height: 9px; background-position: top right; }
+.tipsy-w .tipsy-arrow { top: 50%; margin-top: -4px; left: 0; width: 5px; height: 9px; }
+
+
+/********* Footer ***************/
+.footer_wrapper {
+	width: 960px;
+	border-top: 1px solid #eeeeee;
+	padding: 25px 0px 0px 0px;
+	margin:0px auto;
+	position:relative;
+	z-index:0;
+}
+.footer_nav { margin:0px 0px 50px 0px; }
+.footer_help,
+.footer_about {
+	float: left;
+	margin: 0px 28px 0px 0px;
+}
+.footer_contact,
+.footer_visit {
+	float: left;
+	margin: 0px 17px 0px 0px;
+}
+
+.footer_help h2,
+.footer_about h2,
+.footer_contact h2,
+.footer_visit h2 {
+	font-family: Arial;	font-size: 14px !important;	font-weight: bold;	color: #4e4949; padding:0px !important;	
+}
+.footer_email label {
+	font-family: Arial;	font-size: 14px;	font-weight: bold;	color: #4e4949;	text-align:left;
+	display:block;
+}
+.footer_help ul,
+.footer_about ul,
+.footer_contact ul,
+.footer_visit ul {
+	padding: 10px 0px 0px 0px;
+}
+
+.footer_help ul li,
+.footer_about  ul li,
+.footer_contact ul li,
+.footer_visit ul li {
+	font-family: Arial;	font-size: 12px;	font-weight: normal;	color: #666666;
+	padding: 0px 0px 10px 0px;
+}
+
+.footer_help ul li a,
+.footer_about  a,
+.footer_contact ul li a,
+.footer_visit ul li a {
+	color: #666666;	cursor: pointer;	text-decoration: none;
+}
+
+.footer_help ul li a:hover,
+.footer_about a:hover,
+.footer_contact ul li a:hover,
+.footer_visit ul li a:hover {
+	color: #4e4949;
+	text-decoration: underline;
+}
+.footer_email {
+	position:absolute;
+	top:25px;	right:0px;
+	float:right;
+}
+.email_input_box {
+	diplay:inline;
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/email_input_bg.jpg) repeat-x;
+	width: 378px;	height:29px;	#height:22px;	height:22px\9;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 3px 0px 0px 3px;	-webkit-border-radius: 3px 0px 0px 3px;	border-radius: 3px 0px 0px 3px;
+	padding: 0px 0px 0px 10px;	#padding: 7px 0px 0px 10px;	padding: 7px\9 0px\9 0px\9 10px\9;
+	margin: 10px 0px 0px 0px;
+	font-family:Arial;	font-size:12px;	color:#666666;
+	float:left;
+}
+.email_send_btn {
+	vertical-align:top;	
+	font-size: 10px;	font-weight: normal;	color: #fff;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/ss_icon1.png) -1px -198px no-repeat;
+	width:30px;	height:31px;
+	margin: 10px 0px 0px 0px;	#margin: 10px 0px 0px 0px;
+	cursor: pointer;
+	border: none;
+	float:left;
+	border-radius:0px !important;
+}
+
+.footer_sign_up { margin: 10px 0px 0px 0px; }
+.footer_sign_up span { font-family: Arial;  font-size: 12px; color: #666666; }
+.bottom_footer_bar { margin:0px 0px 40px 0px;  font-family:Arial; font-size:12px; color:#666666; }
+.bottom_footer_bar a { color:#666666; }
+.copy_right { float:left; width:530px; }
+.footer_free_shipping { float:left; width:343px; }
+.email, .pintrest {
+	/* background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/social_link_icons.png) -92px 0px no-repeat; */
+	width:19px;	height:18px;
+	display:block;
+	float:left;
+	margin:0px 5px 0px 0px;
+	cursor:pointer;
+	color:#4e4949;
+}
+
+.twitter {
+	/* background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/social_link_icons.png) 0px 0px no-repeat; */
+	width:19px;
+    height:18px;
+    margin-right:5px;
+    position:relative;
+    z-index:100; 
+}
+.twitter:hover { background-position: 0px -20px !important; }
+#custom-tweet-button a {
+display: block;
+width:18px;
+height:19px;
+cursor:pointer;
+}
+/* .face_book { background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/social_link_icons.png) -23px 0px no-repeat; padding:0px !important; margin-right:5px; position:relative; z-index:10; width:19px; height:18px; } */
+.face_book:hover { background-position: -23px -20px !important; }
+
+.share { background-position: -46px 0px !important; margin-right:5px;}
+.share:hover { background-position: -46px -20px !important;}
+
+.pintrest { background-position: -69px 0px !important; padding:0px !important; position:relative; z-index:100; }
+.pintrest:hover { background-position: -69px -20px !important;}
+
+
+.email:hover { background-position: -92px -20px !important; }
+
+
+/********* top bottom Scroll image *****/
+.global_topbtm_scroll { position:fixed; right: 0px; bottom: 250px; display:none; z-index:999; }
+.global_topbtm_scroll span {
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/top_bottom_scroll.png) 0px 0px no-repeat;
+	width: 30px; height:33px;
+	display:block;
+	margin-bottom:1px;
+	cursor:pointer;
+}
+.global_topbtm_scroll span.scroll_btm {  background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/top_bottom_scroll.png) 0px -32px no-repeat; }
+
+/**** checkout button arrow ****/
+code.right_arrow {
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/icon_set.png) -10px -850px no-repeat;
+	width: 15px;	height:15px;
+	position:absolute;
+	margin: 0px 0px 0px 10px; /* Edit (Rathnavel) */
+	overflow:visible;
+	top:20px;
+}
+	
+	
+	
+/********* popups *****************/
+
+.ppup_cont_holder p{
+	color:#4e4949;	font-size:12px;	line-height:20px;
+	padding-top:2px;
+	}	
+.ppup_cont_holder p a{ font-weight:bold;	color:#4e4949;	text-decoration:none; }
+.ppup_cont_holder,
+.message_holder, 
+.whislist_holder, 
+.sendtofriend_popup_holder,
+.ppup_cont_holder {
+	width: 457px;
+	margin: 0px 27px 30px 27px;	padding: 24px 0px 0px 0px
+}
+
+.ppup_cont_holder .signup_social {
+	border-top:1px solid #eeeeee;
+	margin-top:20px;	padding:20px 0px 0px;
+}
+.ppup_cont_holder .signup_social a {
+	font-weight:bold; font-size:14px;	color:#ffffff;	text-decoration:none;
+	padding:12px 26px 12px 35px;
+	border-radius: 3px;	-moz-border-radius: 3px;	-webkit-border-radius: 3px;
+	float:left;
+}
+.ppup_cont_holder .form_link {
+	color:#4e4949;	font-size:12px;	font-weight:bold;
+	margin:29px 10px 0px 0px;
+	float:left;
+}
+.popup_pos h2 {
+	font-family: Arial;	font-size: 36px;	font-weight: bold;	color: #333333;
+	border-bottom: 1px solid #eeeeee;
+	padding: 0px 0px 15px 0px;
+}
+.popup_pos h4 {
+	font-weight:bold;
+	padding:15px 0px 0px 0px;
+}
+.login_form_holder,
+.message_form_holder,
+.whislist_form_holder {
+	margin: 15px 0px 30px 0px;
+}
+
+.login_inputfields {
+	display: block;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4e4949;
+}
+
+.login_password,
+.how_help_field,
+.keep_me_signin,
+.order_number {
+	display: block;
+	font-family: Arial;	font-size: 14px;	font-weight: bold;	color: #4e4949;	
+	margin: 16px 0px 0px 0px;
+}
+.login_password { float:left; margin:0px  0px 0px 0px !important; }
+.message_form_holder .message_textarea {  width: 440px; }
+#email_login { margin:10px 0px 15px !important;  }
+
+/********** Free Shipping Popup & return popup ****************/
+.free_shipping_content, .return_content { overflow-y: auto; max-height: 380px;}
+.free_shipping_popup h2, .return_popup h2 { margin-bottom:17px;}
+.free_shipping_popup h3, .return_content h3 { 
+	font-weight:bold; color: #4e4949;	font-size:14px;
+}
+.free_shipping_popup p, .return_content p { color: #4e4949; padding-bottom: 26px;}
+.return_content p { 
+	text-align: justify;
+	padding-right: 20px;
+}
+.free_shipping_popup ul { margin:10px 0px; }
+.free_shipping_popup ul li {
+	color:#4e4949;
+	line-height:20px;
+	font-size:12px;
+	padding:0px 0px 5px 0px;
+}
+.free_shipping_holder .jScrollPaneContainer { padding:15px 0px 9px 0px !important; }
+.free_shipping_holder .jScrollPaneDrag { margin:0px !important; }
+.free_shipping_popup h3 { padding:5px 0px;  }
+
+.popup_pos {
+	background: #fff;
+	display: none;
+	width: 511px;
+	padding: 0px;
+	position: absolute;
+	margin-left: -256px;
+	top:8%;	left: 50%;
+	z-index: 99999;
+}
+.nav_pos, .sizing_popup {
+	background: #fff;
+	display: none;
+	width: 700px;
+	padding: 50px;
+	padding-left:80px;
+	position: absolute;
+	margin-left: -400px;
+	top:8%;	left: 50%;
+	z-index: 99999;
+	font-family: Arial;
+}
+.sizing_popup{ padding:50px !important;}
+.sizing_popup h6{ text-align:center;}
+.nav_pos h3, .sizing_popup h3{
+	font-size: 36px;	
+	font-weight: bold;	color: #4e4949;
+	padding: 0px 0px 15px 0px;
+	text-align:center;
+	letter-spacing:1px;
+}
+.sizing_popup h3{ padding-bottom:3px !important;}
+.sizing_pops_holder{
+	display: inline-block;
+	height: 600px;
+	overflow-y: auto;
+	width: 616px;
+	padding-right: 60px;
+}
+.nav_pops_holder{
+	display:inline-block;
+	height:600px;
+	overflow-y:auto;
+	width:725px;
+}
+
+.nav_pops_holder li{ margin-bottom:50px; display:inline-block;}
+.nav_pops_holder h4, .sizing_pops_holder h4{
+	font-size: 20px;
+	text-align:center;
+	font-weight:bold;
+	color:#d9b64e;
+	padding-bottom:50px;
+	letter-spacing:1px;
+}
+.sizing_pops_holder h4{ color:#999999 !important;}
+.sizing_pops_holder p, .sizing_pops_holder span{
+	 color: #333333;
+    font-size: 19px;
+    line-height: 28px;
+    margin: 0 0 35px;
+    padding:0px 10px 0px 25px;
+    display:inline-block;
+}
+.sizing_pops_holder ol li{
+	color: #333333;
+    font-size: 19px;
+    line-height: 28px;
+}
+h6.sizingnum{ 
+	width: 543px;
+	text-align: left;
+	padding-left: 5px;
+}
+.sizing_pops_holder ol{ list-style:number;}
+.nav_address{
+	float:left;
+	width:340px;
+}
+.nav_ord_bef h2{ color:#d9b64e;}
+.nav_address h2, .nav_ord_bef h2{
+	font-size:18px;
+	font-weight:bold;
+	line-height:35px;
+}
+.nav_address span, .nav_ord_bef span{
+	font-size:18px;
+	color:#333333;
+	line-height:28px;
+}
+.nav_address span{
+	line-height:55px !important;
+}
+.nav_ord_bef span{
+	margin-top:60px !important;
+	display:inline-block;
+}
+.nav_ord_bef{
+	float:left;
+	width:360px;
+}
+.lookbook_popup { width:650px !important; height:395px !important; padding:30px 30px 25px 30px !important; margin-left:-355px !important;  }
+.vedio_holder { width:650px; height:357px; }
+.lookbook_popup .login_popup_close { margin:-25px 0px 0px 655px; }
+.lookbook_popup span { margin:25px 0px 0px 0px; font-size:18px; color:#4c4c4c; font-weight:bold; display:block;  }
+/******************* cart_popup & upgrade_popup **********************/
+
+.remove_item { /*** cart popup remove icon ***/
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px -352px no-repeat;
+	float: left;
+	width: 20px;	#width: 15px;	height: 11px; 
+	margin: 15px 0px 0px 25px;
+	cursor: pointer;
+}
+#wish_list_popup_content .remove_item { margin:15px 0px 0px 10px !important; }
+.cart_submit_area {
+	margin: 12px 0px 0px 0px;
+	float: left;
+	width: 745px;
+}
+.cart_submit_area .gry_btn { padding: 18px 18px; margin:0px; }
+.cart_submit_area p {
+	font-family: Arial;	font-size: 14px;
+	font-weight: bold;	color: #4d4d4d;
+	float: right;
+	padding:17px 70px 10px 0px;
+}
+.go_to_cart {
+	background: #d22e2e;
+	border-radius: 5px;	-moz-border-radius: 5px;	-webkit-border-radius: 5px;
+	width: 138px;	height: 22px;
+	display: block;
+	float: right;
+	margin: 0px 0px 0px 20px;	padding: 8px 0px 0px 10px;
+	text-transform: uppercase;	font-weight: bold;
+	font-family: Arial;	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+.perchased_order_receipt a:hover.purchased_order_print_receipt { background: #7d7d7d; }
+
+.purchased_order_print_receipt {
+	background: #b1b1b1;
+	border-radius: 4px;	-moz-border-radius: 4px;	-webkit-border-radius: 4px;	
+	width: 118px;	height: 22px;
+	display: block;
+	float: left;
+	font-family: Arial;	font-weight: bold;	font-size: 14px;	color: #fff;	text-transform: uppercase;	text-decoration: none;
+	padding: 8px 0px 0px 10px;	margin: 0px 10px 0px 0px;
+}
+.perchased_order_receipt a:hover.purchased_order_download_receipt { background: #9e2323; }
+.purchased_order_download_receipt {
+	background: #d22e2e;
+	border-radius: 4px;	-moz-border-radius: 4px;	-webkit-border-radius: 4px;
+	width: 158px;	height: 22px;
+	display: block;
+	float: left;
+	font-family: Arial;	font-size: 14px;	color: #fff;	font-weight: bold;
+	text-transform: uppercase;	text-decoration: none;
+	padding: 8px 0px 0px 10px;
+}
+.control_tool .tabl .cont1 span {
+	border-bottom: 1px dotted #BFBABA;
+	color: #4E4949;
+	display: block;
+	padding: 3px 0 3px 10px;
+	width: 268px;
+}
+#backgroundPopup {
+	display: none;
+	position: absolute;
+	top: 0px;
+	height: 100% ;	width: 100% ;
+	background: url(https://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/popup_bg.png) repeat;
+	z-index: 70000;
+}
+
+.loading_page {
+	display:none;
+	position:fixed;
+	width:32px;
+	height:32px;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/pageloading.gif) no-repeat;
+	left:50%;
+	margin-left:-16px;
+	top:50%;
+	margin-top:-16px;
+	z-index:99999;
+}
+
+
+/****** timmer wrapper using  code here */
+#black_timmer_wrapper {padding:5px 8px; margin:27px 0px 30px 130px; *margin:27px 0px 30px 142px;}
+#black_timmer_wrapper li{
+	list-style-type:none;
+	float:left;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:40px;
+	padding:12px;
+	border-radius:5px;
+	margin-left:3px;
+	font-weight:600;
+	background:#404040 url(http://commondatastorage.googleapis.com/images2.solestruck.com/images/timmer_line.jpg) 0px 31px repeat-x;
+}
+#black_timmer_wrapper li.hr_c2,
+#black_timmer_wrapper li.min_c2,
+#black_timmer_wrapper li.sec_c2{margin-right:8px !important; border:0px !important;}
+
+
+
+
+#timmer_wrapper {right:160px; padding:5px 8px; background-color:#484848; position:absolute; cursor:pointer; z-index:9999}
+#timmer_wrapper li{
+	list-style-type:none;
+	float:left;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	padding:4px 6px;
+	border-radius:3px;
+	margin-left:1px;
+	background:#2b2b2b url(http://commondatastorage.googleapis.com/images2.solestruck.com/images/timmer_top_line.jpg) 0px 13px repeat-x;
+}
+#custom_timmer_wrapper {right:27px; top:349px; padding:5px 8px; background-color:#484848; position:absolute; cursor:pointer; z-index:9999}
+#custom_timmer_wrapper li{
+	list-style-type:none;
+	float:left;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:49px;
+	padding:13px 10px;
+	border-radius:3px;
+	margin-left:1px;
+	background:#2b2b2b url(http://commondatastorage.googleapis.com/images2.solestruck.com/images/timmer_top_line.jpg) 0px 36px repeat-x;
+}
+.custom_banner{
+	position: relative;
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/landingpagebanner_gae/SS_DecSale.jpg) no-repeat;
+	padding: 325px 480px;
+	display: inline-block;
+	margin-bottom:70px;
+}
+
+#sale_timmer_wrapper {right:160px; padding:5px 8px; background-color:#484848; position:absolute; cursor:pointer; z-index:9999}
+#sale_timmer_wrapper li{
+	list-style-type:none;
+	float:left;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	padding:4px 6px;
+	border-radius:3px;
+	margin-left:1px;
+	background:#2b2b2b url(http://commondatastorage.googleapis.com/images2.solestruck.com/images/timmer_top_line.jpg) 0px 13px repeat-x;
+}
+.intro_timmer_wrapper{ bottom:0px; padding:10px 0 50px; left:100px;}
+.hr_c2, .min_c2, .sec_c2{ border-right:3px solid #484848 !important; }
+
+
+.signin_form, .create_account, .signin_sale, .wish_list_form, .create_account_sale, .create_account_wishlist{
+	padding:30px 50px 50px;
+	width:487px;
+	margin-left:-300px;
+	display:none;
+}
+.signin_sale{ padding:30px 80px 105px !important; margin-left:-330px !important; /*  position: fixed !important; */}
+.signin_sale_pwd{right:125px !important;}
+.signin_sale_pwd1{right:85px !important;}
+.sale_signin_popup{text-align:center;}
+.sale_signin_popup h1{
+	font-size:35px;
+	border:0px !important;
+	padding:5px 0px 3px !important;
+	letter-spacing:1px;
+}
+.sale_signin_popup span{
+	font-size:20px; color:#999; letter-spacing:1px;
+}
+.signin_sale  div.single_inputdiv{ margin:55px 0px 20px !important;}
+.sale_popup_close{ margin:-22px 0px 0px 545px !important;}
+.signin_popup_close, .sale_popup_close, .fb_review_popup_close {
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px -350px no-repeat;
+	position:absolute;
+	width:23px;
+	height:14px;
+	margin:-12px 0px 0px 504px;
+	#margin:31px 0px 0px 490px;
+	cursor:pointer;
+}
+.fb_review_popup_close{
+	margin:0px !important;
+	right:0px;
+	top:7px;
+}
+/* .inputbox_final_pwd{border-top:1px solid #d9d9d9 !important; padding-right:100px !important; width:368px !important;} */
+.inputbox_final_pwd{
+	display: block;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius:  0px 0px 3px 3px;
+	-webkit-border-radius: 0px 0px 3px 3px;
+	height: 17px;
+	width: 456px;
+	padding: 10px 12px 10px 17px;
+	font-size: 14px;
+	color: #999!important;
+	margin: -1px -1px 1px;
+	border-top: 0px solid #d9d9d9 !important;
+	
+}
+.inputbox_final{
+	display: block;
+	border: 1px solid #d9d9d9;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	height: 17px;
+	width: 456px;
+	padding: 10px 12px 10px 17px;
+	font-size: 14px;
+	color: #999!important;
+	margin: -1px -1px 1px;
+	
+}
+.inputspan_txt, .inputspan_pwd{
+	position: absolute;
+	padding: 15px 15px 0px 15px;
+	color: #999;
+	font-size: 14px;
+}
+.inputspan_pwd{
+	padding: 11px 15px 0px 15px !important;
+}
+.signin_sale div.signin_inputdiv{ margin:55px 0 20px !important;}
+.signin_inputdiv{
+	/* border-radius:3px;
+	border:1px solid #ccc; */
+	margin:40px 0px 20px;
+}
+.pwd{
+	border:0px;
+	position:absolute;
+	float:right;
+	width:20px;
+	padding:4px 10px;
+	cursor:pointer;
+	margin-top:-43px;
+	right:95px;
+	font-size:25px;
+}
+.popup_line{
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/images/popup_line.png) 0px no-repeat;
+	padding:5px 50px;
+	position:absolute;
+	margin-top:72px;
+	left:45%;
+}
+.pwd1{
+	border:0px;
+	position:absolute;
+	width:20px;
+	padding:4px 10px;
+	cursor:pointer;
+	margin-top:-30px;
+	right:55px;
+	color:#999;
+	font-size:11px;
+	border-left:1px solid #ccc;
+}
+.signin_forgot_pwd_act, .signin_create_ac_act, .create_ac_signin_act, .signin_create_ac_act_sale, .signin_forgot_pwd_act_sale, .create_ac_signin_act_sale, .signin_create_ac_act_wishlist{
+	float:left; 
+	color:#ccc; 
+	font-size:14px;
+	font-weight:normal;
+	text-decoration:none;
+	padding-bottom:30px;
+	
+}
+.signin_create_ac_act, .signin_create_ac_act_sale, .signin_create_ac_act_wishlist{float:right;}
+
+.second_para_popup{ padding-bottom:30px !important;}
+.geton_one, .geton_two{ padding-bottom:50px !important;}
+.black_fridaypopup, .black_fridaypopup_next_act, .black_fridaypopup_one, .black_fridaypopup_two, .geton_one, .geton_two{
+	display:block;
+	padding:30px 30px 70px;
+	width:590px;
+	text-align:center;
+	margin-left:-335px;
+	display:none;
+	/* position: fixed !important ;  */ 
+	
+}
+
+.black_fridaypopup
+{
+	top: 5% !important;	
+}
+
+.blackclose_act{
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/newdesign/images/icon_set.png) 0px -350px no-repeat;
+	float:right;
+	width:23px;
+	height:14px;
+	margin:-22px -30px 0px 523px;
+	cursor:pointer;
+}
+.black_fridaypopup h1, .black_fridaypopup_next_act h1, .black_fridaypopup_one h1, .black_fridaypopup_two h1, .geton_one h1, .geton_two h1{
+	font-size:35px;
+	border:0px !important;
+	padding:5px 0px 3px !important;
+	letter-spacing:1px;
+}
+.black_fridaypopup_one h3, .black_fridaypopup_two h3, .geton_one h3, .geton_two h3{font-size:20px; color:#999; border:0px !important; padding:0px !important; padding-bottom:30px !important; letter-spacing:1px;}
+.black_fridaypopup_one code.popup_line,
+.black_fridaypopup_two code.popup_line,
+.geton_one code.popup_line,
+.geton_two code.popup_line{ margin-top:-10px !important;}
+
+
+.black_fridaypopup_one p, .black_fridaypopup_two p{ margin:15px 0px 43px !important;}
+.black_fridaypopup_one p, .black_fridaypopup_two p, .geton_one p, .geton_two p{ font-size:18px; color:#666; line-height:29px; padding:10px 0px; margin:10px 0px;}
+.popup_sale_one, .popup_final_one, .popup_final_two, .popup_get_two, .popup_get_three{
+	display:inline-block !important;
+	height:100px;
+	width:100px;
+	margin:15px;
+	background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/live/images/Pierre_Confetti2.jpg) 0px no-repeat;
+}
+.popup_final_one{background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/live/images/Pierre_Green.jpg) 0px no-repeat !important;}
+.popup_final_two{background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/live/images/Pierre_Green.jpg) 0px no-repeat !important;}
+.popup_get_two{background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/live/images/Pierre_Confetti3.jpg) 0px no-repeat !important;}
+.popup_get_three{background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/live/images/Pierre_Confetti3.jpg) 0px no-repeat !important;}
+.black_fridaypopup span, .black_fridaypopup_next_act span{font-size:14px; color:#999; line-height:18px; letter-spacing:0.5px;}
+.blackfriday_list{padding:77px 0px 55px;}
+ul.blackfriday_list li{
+	font-size:18px;
+	padding:5px 0px;
+	 color:#666;
+}
+ul.blackfriday_list li b{ padding-right:20px;}
+ul.blackfriday_list li lable{ background-color:#f9f2dc;}
+a.shop_btn{padding: 22px 30px !important;}
+a.next_btn, a.shop_btn{
+	color: #FFFFFF; 
+	background-color: #E2BF52; 
+	border-radius:2px; 
+	font-size: 22px; 
+	text-decoration: none; 
+	padding: 25px 75px;
+	line-height:100px;
+	letter-spacing:1px;
+	font-weight:bold;
+}
+a.signin_btn{
+	color: #FFFFFF; 
+	/* background-color: #E2BF52;  */
+	border-radius:2px; 
+	font-size: 24px; 
+	text-decoration: none; 
+	float: left; 
+	padding: 26px 0px;
+	text-align:center;
+	width:196px;
+}
+a.facebook_btn{
+	color: #FFFFFF; 
+	border-radius:2px;
+	font-size: 14px;
+	font-weight:600; 
+	text-decoration: none; 
+	float: left; 
+	padding: 32px 18px 30px 45px;
+	background:#3b5998 url(http://commondatastorage.googleapis.com/images2.solestruck.com/images/facebook_login.png) 16px no-repeat;
+	text-align:center;
+	width:164px;
+}
+.or{
+	border-right:1px solid #ccc; 
+	float:left; 
+	margin:0px 31px; 
+	padding:37px 0px; 
+	position:relative;
+}
+
+.or b{
+	background-color:#fff; 
+	padding:5px; 
+	font-size:14px; 
+	color:#999; 
+	position:absolute;
+	margin:-12px 0px 0px -15px;
+}
+
+
+
+.link_holder{padding:0px 0px 55px 65px;}
+.idp_carts{
+	height:30px; width:82px;
+	background:url(http://commondatastorage.googleapis.com/images2.solestruck.com/images/idp_circle.png) no-repeat;
+	color:#fff;
+	padding:25px 0px 35px;
+	top:100px;
+	right:460px;
+	text-align:center;
+	font-weight:bold;
+	position:absolute;
+	font-size:13px;
+	z-index:999;
+	line-height:16px;
+}
+.nav_pos {
+    background: #fff;
+    display: none;
+    width: 640px;
+    padding: 50px;
+    padding-left:80px;
+    position: absolute;
+    margin-left: -400px;
+    top:8%;    left: 50%;
+    z-index: 99999;
+    font-family: Arial;
+}
+.nav_pos h3{
+    font-size: 36px;    
+    font-weight: bold;    color: #4e4949;
+    padding: 0px 0px 15px 0px;
+    text-align:center;
+    width:600px;
+}
+.nav_pops_holder{
+    display:inline-block;
+    height:600px;
+    overflow-y:auto;
+    width:670px;
+    display:none;
+}
+
+.nav_pops_holder li{ margin-bottom:50px; display:inline-block;}
+.nav_pops_holder h4{
+    font-size: 20px;
+    text-align:center;
+    font-weight:bold;
+    color:#d9b64e;
+    padding-bottom:50px;
+    width:585px;
+}
+.nav_address{
+    float:left;
+    width:330px;
+}
+.nav_ord_bef h2{ color:#d9b64e;}
+.nav_address h2, .nav_ord_bef h2{
+    font-size:18px;
+    font-weight:bold;
+    line-height:35px;
+}
+.nav_address span, .nav_ord_bef span{
+    font-size:18px;
+    color:#333333;
+    line-height:28px;
+}
+.nav_ord_bef{
+    float:left;
+    width:320px;
+}
+.nav_popup_line{
+    float:left; 
+    margin:-35px 0px 0px 270px;
+    background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/images/popup_line.png) 0px no-repeat;
+    padding:5px 50px;
+}
+.dot{
+ background: url(http://commondatastorage.googleapis.com/images2.solestruck.com/gae/live/images/dot.png) 0 6px no-repeat;
+ padding: 0 0px 0px 15px;
+}
+.line_space{
+ padding-bottom:5px !important;
+}
+.decimal_li{ list-style-type:decimal; margin:0px 0px 0px 17px;}
+.decimal_li li{ padding-bottom:20px; line-height:20px;}
+#features ul{ width:148px;}
+/* featured Page*/
+.featured_holder1{
+		padding:80px;
+		/* background-color:#e66e6e; */
+		font-family: 'Karla', sans-serif;
+	}
+	.featured_holder2{
+		padding:80px;
+		background-color:#e66e6e;
+		font-family: 'Karla', sans-serif;
+	}
+	.feature_main{
+		width:620px;
+		margin:0px auto;
+		padding:100px;
+		text-align:center;
+		
+	}
+	.feature_main div{
+		background-color:#ffffff;
+		padding:50px 29px;
+	}
+	.feature_main h1{
+		font-size: 35px !important;
+		line-height: 20px !important;
+		margin: 0px !important;
+		padding: 0px 0px 20px !important;
+		border-bottom: 0px !important;
+		font-weight: 600 !important;
+		letter-spacing: 1px !important;
+		color: #333333 !important;
+	}
+	.feature_main p{
+		font-size: 17px;
+		line-height: 21px;
+		padding: 0;
+		margin: 0;
+		font-style: italic;
+		color: #333333;
+	}
+	.feature_main a{
+		text-decoration: none !important;
+	}
+	
+#pre_black_fridaypopup code.popup_line { margin-top:33px !important; }
+ #default_black_fridaypopup code.popup_line, .black_fridaypopup_next_act code.popup_line{
+ margin-top:50px !important;}

@@ -1,0 +1,932 @@
+<project name="Solestruck Gae Minificaion" default="all" basedir="..">
+	
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+	  <classpath>
+	    <pathelement location="../YUI/build/ant-contrib-1.0b3.jar"/>
+	  </classpath>
+	</taskdef>
+    <!-- Setup -->
+    <property name="SRC_DIR" value="src" description="Source folder" />
+    <property name="SRC_CSS_DIR" value="../war/css" description="CSS source folder" />
+    <property name="SRC_JS_DIR" value="../war/js" description="JavaScript source folder" />
+    <property name="DIST_DIR" value="dist" description="Output folder for build targets" />
+    <property name="DIST_CSS_DIR" value="dist" description="Output folder for CSS files" />
+    <property name="DIST_JS_DIR" value="dist" description="Output folder for JavaScript files" />
+    <property name="BUILD_DIR" value="build" description="Files needed to build" />
+	
+	<property name="WEBINF_DIR" value="../war/WEB-INF/classes" description="WEB INF source folder" />
+	<!-- <property name="WEBINF_DIR" value="../src" description="WEB INF source folder" /> -->
+	
+	
+    <property name="YUI" value="${BUILD_DIR}/yuicompressor-2.4.2.jar" description="YUICompressor" />
+
+    <!-- Files names for distribution -->
+    <property name="CSS" value="${DIST_CSS_DIR}/solestruck.css" />
+    <property name="CSS_MIN" value="${DIST_CSS_DIR}/solestruck.min.css" />
+    <property name="JS" value="${DIST_JS_DIR}/solestruck.js" />
+    <property name="JS_MIN" value="${DIST_JS_DIR}/solestruck.min.js" />
+	
+	<!-- Files names for distribution IDP -->
+	 
+	    <property name="JSIDP" value="${DIST_JS_DIR}/solestruckidp.js" />
+	    <property name="JS_MINIDP" value="${DIST_JS_DIR}/solestruckidp.min.js" />
+	     <property name="JSWISHLIST" value="${DIST_JS_DIR}/solestruckwishlist.js" />
+	    <property name="JS_MINWISHLIST" value="${DIST_JS_DIR}/solestruckwishlist.min.js" />
+	 	<property name="JSLIST" value="${DIST_JS_DIR}/solestrucklist.js" />
+		<property name="JS_MINLIST" value="${DIST_JS_DIR}/solestrucklist.min.js" />
+		<property name="JSSORT" value="${DIST_JS_DIR}/solestrucksort.js" />
+		<property name="JS_MINSORT" value="${DIST_JS_DIR}/solestrucksort.min.js" />
+	    <property name="JSNEWARRIVAL" value="${DIST_JS_DIR}/solestrucknewarrival.js" />
+		<property name="JS_NEWARRIVAL" value="${DIST_JS_DIR}/solestrucknewarrival.min.js" />
+		<property name="JSSALE" value="${DIST_JS_DIR}/solestrucksale.js" />
+		<property name="JS_MINSALE" value="${DIST_JS_DIR}/solestrucksale.min.js" />
+		<property name="JSSTYLE" value="${DIST_JS_DIR}/solestruckstyle.js" />
+		<property name="JS_MINSTYLE" value="${DIST_JS_DIR}/solestruckstyle.min.js" />
+		<property name="JSCOMING" value="${DIST_JS_DIR}/solestruckcoming.js" />
+		<property name="JS_MINCOMING" value="${DIST_JS_DIR}/solestruckcoming.min.js" />
+	    <property name="JSMYACC" value="${DIST_JS_DIR}/solestruckmyaccount.js" />
+		<property name="JSMYACCMIN" value="${DIST_JS_DIR}/solestruckmyaccount.min.js" />
+		<property name="JSSEARCH" value="${DIST_JS_DIR}/solestrucksearch.js" />
+		<property name="JS_MINSEARCH" value="${DIST_JS_DIR}/solestrucksearch.min.js" />
+		<property name="JSLOOKBOOK" value="${DIST_JS_DIR}/solestrucklookbook.js" />
+		<property name="JS_MINLOOKBOOK" value="${DIST_JS_DIR}/solestrucklookbook.min.js" />
+		<property name="JSTHANKYOU" value="${DIST_JS_DIR}/solestruckthankyou.js" />
+		<property name="JSTHANKYOUMIN" value="${DIST_JS_DIR}/solestruckthankyou.min.js" />
+		<property name="JSSTREETCRED" value="${DIST_JS_DIR}/solestruckstreetcred.js" />           
+		<property name="JSSTREETCREDMIN" value="${DIST_JS_DIR}/solestruckstreetcred.min.js" />    
+		<property name="JSCUSTOMERSERVICE" value="${DIST_JS_DIR}/solestruckcustomerservice.js" />           
+		<property name="JSCUSTOMERSERVICE" value="${DIST_JS_DIR}/solestruckcustomerservice.min.js" />    
+    
+
+    <target name="css" description="Concatenate CSS source files">
+        <echo message="Building ${CSS}" />
+        <concat destfile="${CSS}">
+            
+        	<fileset dir="${SRC_CSS_DIR}" includes="reset.css"/>
+        	<fileset dir="${SRC_CSS_DIR}" includes="global.css"/>
+        	<fileset dir="${SRC_CSS_DIR}" includes="style.css"/>
+        	<fileset dir="${SRC_CSS_DIR}" includes="form.css"/>
+        	<fileset dir="${SRC_CSS_DIR}" includes="jquery.jscrollpane.css"/>
+            <fileset dir="${SRC_CSS_DIR}" includes="jScrollPane.css"/>
+            
+        </concat>
+        <echo message="${CSS} built." />
+    </target>
+
+    <target name="css.min" depends="css" description="Minimize CSS files">
+        <echo message="Building ${CSS_MIN}" />
+        <apply executable="java" parallel="false" verbose="true" dest="${DIST_CSS_DIR}">
+            <fileset dir="${DIST_CSS_DIR}">
+            	
+            </fileset>
+            <arg line="-jar" />
+            <arg path="${YUI}" />
+            <arg value="--charset" />
+            <arg value="ANSI" />
+            <arg value="-o" />
+            <targetfile />
+            <mapper type="glob" from="solestruck.css" to="solestruck.min.css" />
+        </apply>
+        <echo message="${CSS_MIN} built." />
+    </target>
+
+    <target name="js"  description="Concatenate JavaScript source files">
+        <echo message="Building ${JS}" />
+        <concat destfile="${JS}">
+        	<fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+        	
+        	<fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+        	
+        	<fileset dir="${SRC_JS_DIR}" includes="jScrollPane.js"/>
+            <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+           
+        	
+        	<fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+            <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+            	
+        	
+        	<fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+        	<fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+        	<fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+        	<fileset dir="${SRC_JS_DIR}" includes="bannerSlider.js"/>
+        	<fileset dir="${SRC_JS_DIR}" includes="lookbook.js"/>
+        	<fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+            <fileset dir="${SRC_JS_DIR}" includes="jquery.mousewheel.js"/><!-- for bobt popup -->
+        	<fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/><!-- for bobt popup -->
+        	<fileset dir="${SRC_JS_DIR}" includes="jquery.easing.1.3.js"/>
+        	<fileset dir="${SRC_JS_DIR}" includes="jquery.evoslider.lite-1.1.0.min.js"/>
+            <!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+        </concat>
+        <echo message="${JS} built." />
+    </target>
+
+    <target name="js.min" depends="js" description="Minimize JavaScript files">
+        <echo message="Building ${JS_MIN}" />
+        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+            <fileset dir="${DIST_JS_DIR}">
+                
+            </fileset>
+            <arg line="-jar" />
+            <arg path="${YUI}" />
+            <arg value="--charset" />
+            <arg value="ANSI" />
+            <arg value="-o" />
+            <targetfile />
+            <mapper type="glob" from="solestruck.js" to="solestruck.min.js" />
+        </apply>
+        <echo message="${JS_MIN} built." />
+    </target>
+	
+	 <target name="jswishlist"  description="Concatenate JavaScript source files idp">
+	        <echo message="Building ${JSWISHLIST}" />
+	        <concat destfile="${JSWISHLIST}">
+	        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+	        	
+	        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+	       
+            <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+            <fileset dir="${SRC_JS_DIR}" includes="wishlist.js"/>
+	        	
+	        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+	        
+	        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+	        
+	        <fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+	        </concat>
+	        <echo message="${JSWISHLIST} built." />
+	   </target>
+
+	    <target name="js.minwishlist" depends="js" description="Minimize JavaScript files">
+	        <echo message="Building ${JS_MINWISHLIST}" />
+	        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+	            <fileset dir="${DIST_JS_DIR}">
+	                
+	            </fileset>
+	            <arg line="-jar" />
+	            <arg path="${YUI}" />
+	            <arg value="--charset" />
+	            <arg value="ANSI" />
+	            <arg value="-o" />
+	            <targetfile />
+	            <mapper type="glob" from="solestruckwishlist.js" to="solestruckwishlist.min.js" />
+	        </apply>
+	        <echo message="${JS_MINWISHLIST} built." />
+	    </target>
+	    
+	     <target name="jsidp"  description="Concatenate JavaScript source files idp">
+	        <echo message="Building ${JSIDP}" />
+	        <concat destfile="${JSIDP}">
+	        	<!-- <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/> -->
+	        	 <fileset dir="${SRC_JS_DIR}" includes="jquery-1.8.0.min.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="jScrollPane.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="wishlist.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="itemdetail.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="jquery.elevatezoom.js"/>
+	        <fileset dir="${SRC_JS_DIR}" includes="streetCred.js"/>	
+	        <fileset dir="${SRC_JS_DIR}" includes="jquery.carousel.js"/>
+	        	
+	        <!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+	        </concat>
+	        <echo message="${JSIDP} built." />
+	   </target>
+
+	    <target name="js.minidp" depends="js" description="Minimize JavaScript files">
+	        <echo message="Building ${JS_MINIDP}" />
+	        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+	            <fileset dir="${DIST_JS_DIR}">
+	                
+	            </fileset>
+	            <arg line="-jar" />
+	            <arg path="${YUI}" />
+	            <arg value="--charset" />
+	            <arg value="ANSI" />
+	            <arg value="-o" />
+	            <targetfile />
+	            <mapper type="glob" from="solestruckidp.js" to="solestruckidp.min.js" />
+	        </apply>
+	        <echo message="${JS_MINIDP} built." />
+	    </target>
+	
+	
+	
+		<target name="jssearch"  description="Concatenate JavaScript source files search">
+		        <echo message="Building ${JSSEARCH}" />
+		        <concat destfile="${JSSEARCH}">
+		        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+		        	
+		        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="searchPage.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="jScrollPane.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+		     
+		        	
+		        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+		        	  	
+		        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+		        	<!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+		        </concat>
+		        <echo message="${JSSEARCH} built." />
+		   </target>
+
+		    <target name="js.minsearch" depends="js" description="Minimize JavaScript files">
+		        <echo message="Building ${JS_MINSEARCH}" />
+		        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+		            <fileset dir="${DIST_JS_DIR}">
+		                
+		            </fileset>
+		            <arg line="-jar" />
+		            <arg path="${YUI}" />
+		            <arg value="--charset" />
+		            <arg value="ANSI" />
+		            <arg value="-o" />
+		            <targetfile />
+		            <mapper type="glob" from="solestrucksearch.js" to="solestrucksearch.min.js" />
+		        </apply>
+		        <echo message="${JS_MINSEARCH} built." />
+		    </target>
+
+	
+	 <target name="jslist"  description="Concatenate JavaScript source files idp">
+		        <echo message="Building ${JSLIST}" />
+		        <concat destfile="${JSLIST}">
+		        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+		        	
+		        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+		        	
+		       
+		           <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+		          
+		        	
+		        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+		        	  	
+		        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+		       
+		       <fileset dir="${SRC_JS_DIR}" includes="FieldValidator.js"/>
+		        	
+		        	<fileset dir="${SRC_JS_DIR}" includes="jquery.form.js"/>
+		        	<fileset dir="${SRC_JS_DIR}" includes="jquery.jscrollpane.min.js"/>
+		        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.core.js"/>
+		        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.widget.js"/>
+		        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.mouse.js"/>
+		        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.slider.js"/>
+		        	<fileset dir="${SRC_JS_DIR}" includes="jquery.mousewheel.js"/>
+		        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.touch-punch.js"/>
+		        	<fileset dir="${SRC_JS_DIR}" includes="scroller.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>	
+        		<fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="filter.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="VendorPage.js"/>
+		        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+		        	<!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+		        </concat>
+		        <echo message="${JSLIST} built." />
+		    </target>
+
+		    <target name="js.minlist" depends="js" description="Minimize JavaScript files">
+		        <echo message="Building ${JS_MINLIST}" />
+		        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+		            <fileset dir="${DIST_JS_DIR}">
+		                
+		            </fileset>
+		            <arg line="-jar" />
+		            <arg path="${YUI}" />
+		            <arg value="--charset" />
+		            <arg value="ANSI" />
+		            <arg value="-o" />
+		            <targetfile />
+		            <mapper type="glob" from="solestrucklist.js" to="solestrucklist.min.js" />
+		        </apply>
+		        <echo message="${JS_MINLIST} built." />
+		    </target>
+	
+	<target name="jsnewarrival"  description="Concatenate JavaScript source files idp">
+				        <echo message="Building ${JSNEWARRIVAL}" />
+				        <concat destfile="${JSNEWARRIVAL}">
+				        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+				        	
+				        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+				        	
+				           <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+				         
+				        	
+				        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+				        	  	
+				        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+				        	
+					    <fileset dir="${SRC_JS_DIR}" includes="FieldValidator.js"/>
+				        	
+				        <fileset dir="${SRC_JS_DIR}" includes="jquery.form.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.jscrollpane.min.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.core.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.widget.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.mouse.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.slider.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.mousewheel.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="jquery.ui.touch-punch.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="scroller.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/> 	
+		        		<fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="filter.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="NewArrival.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+				        	<!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+				        </concat>
+				        <echo message="${JSNEWARRIVAL} built." />
+	</target>
+
+    <target name="js.minnewarrival" depends="js" description="Minimize JavaScript files">
+        <echo message="Building ${JS_NEWARRIVAL}" />
+        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+            <fileset dir="${DIST_JS_DIR}">
+                
+            </fileset>
+            <arg line="-jar" />
+            <arg path="${YUI}" />
+            <arg value="--charset" />
+            <arg value="ANSI" />
+            <arg value="-o" />
+            <targetfile />
+            <mapper type="glob" from="solestrucknewarrival.js" to="solestrucknewarrival.min.js" />
+        </apply>
+        <echo message="${JS_NEWARRIVAL} built." />
+    </target>
+	
+	 <target name="jssort"  description="Concatenate JavaScript source files idp">
+		 	<echo message="Building ${JSSORT}" />
+	 					        <concat destfile="${JSSORT}">
+	 					        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+	 					        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+	 					        	
+	 					           <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+	 					         
+	 					        	
+	 					        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+	 					        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+	 					        	  	
+	 					        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+	 					        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+	 					        	
+	 					        	 <fileset dir="${SRC_JS_DIR}" includes="FieldValidator.js"/>
+	 					        	
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="jquery.form.js"/>
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="jquery.jscrollpane.min.js"/>
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.core.js"/>
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.widget.js"/>
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.mouse.js"/>
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.slider.js"/>
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="jquery.mousewheel.js"/>
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.touch-punch.js"/>
+	 					        	<fileset dir="${SRC_JS_DIR}" includes="scroller.js"/>
+	 					            <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+		 			        		<fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+		 					        <fileset dir="${SRC_JS_DIR}" includes="filter.js"/>
+		 					         <fileset dir="${SRC_JS_DIR}" includes="SortPage.js"/>
+		 					        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+	 					        	<!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+	 					        </concat>
+	 					        <echo message="${JSSORT} built." />
+		</target>
+
+	    <target name="js.minsort" depends="js" description="Minimize JavaScript files">
+	    	<echo message="Building ${JS_MINSORT}" />
+		        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+		            <fileset dir="${DIST_JS_DIR}">
+		                
+		            </fileset>
+		            <arg line="-jar" />
+		            <arg path="${YUI}" />
+		            <arg value="--charset" />
+		            <arg value="ANSI" />
+		            <arg value="-o" />
+		            <targetfile />
+		            <mapper type="glob" from="solestrucksort.js" to="solestrucksort.min.js" />
+		        </apply>
+	    	<echo message="${JS_MINSORT} built." />
+	    </target>
+	
+	 <target name="jssale"  description="Concatenate JavaScript source files idp">
+				        <echo message="Building ${JSSALE}" />
+				        <concat destfile="${JSSALE}">
+				        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+				        	
+				           <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+				         
+				        	
+				        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+				        	  	
+				        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+				       
+				        	
+				        	 <fileset dir="${SRC_JS_DIR}" includes="FieldValidator.js"/>
+				        	
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.form.js"/>
+				            <fileset dir="${SRC_JS_DIR}" includes="jquery.jscrollpane.min.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.core.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.widget.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.mouse.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.slider.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.mousewheel.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.touch-punch.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="scroller.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>	
+		        		<fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="filter.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="sale.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+				        	<!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+				        </concat>
+				        <echo message="${JSSALE} built." />
+	 </target>
+
+				    <target name="js.minsale" depends="js" description="Minimize JavaScript files">
+				        <echo message="Building ${JS_MINSALE}" />
+				        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+				            <fileset dir="${DIST_JS_DIR}">
+				                
+				            </fileset>
+				            <arg line="-jar" />
+				            <arg path="${YUI}" />
+				            <arg value="--charset" />
+				            <arg value="ANSI" />
+				            <arg value="-o" />
+				            <targetfile />
+				            <mapper type="glob" from="solestrucksale.js" to="solestrucksale.min.js" />
+				        </apply>
+				        <echo message="${JS_MINSALE} built." />
+				    </target>
+	
+	<target name="jsstyle"  description="Concatenate JavaScript source files idp">
+					        <echo message="Building ${JSSTYLE}" />
+					        <concat destfile="${JSSTYLE}">
+					        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+					        	
+					        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+					        	
+					           <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+					        
+					        	
+					        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+					        	  	
+					        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+					       
+				        	
+				        	<fileset dir="${SRC_JS_DIR}" includes="FieldValidator.js"/>
+				        	
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.form.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.core.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.widget.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.mouse.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.slider.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.jscrollpane.min.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="jquery.mousewheel.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="jquery.ui.touch-punch.js"/>
+				        	<fileset dir="${SRC_JS_DIR}" includes="scroller.js"/>
+					        	
+			        		<fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="filter.js"/>
+					         <fileset dir="${SRC_JS_DIR}" includes="style.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+					        	<!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+					        </concat>
+					        <echo message="${JSSTYLE} built." />
+		 </target>
+
+	    <target name="js.minstyle" depends="js" description="Minimize JavaScript files">
+	        <echo message="Building ${JS_MINSTYLE}" />
+	        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+	            <fileset dir="${DIST_JS_DIR}">
+	                
+	            </fileset>
+	            <arg line="-jar" />
+	            <arg path="${YUI}" />
+	            <arg value="--charset" />
+	            <arg value="ANSI" />
+	            <arg value="-o" />
+	            <targetfile />
+	            <mapper type="glob" from="solestruckstyle.js" to="solestruckstyle.min.js" />
+	        </apply>
+	        <echo message="${JS_MINSTYLE} built." />
+	    </target>
+	
+	<target name="jscoming"  description="Concatenate JavaScript source files idp">
+				        <echo message="Building ${JSCOMING}" />
+				        <concat destfile="${JSCOMING}">
+				        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+				        	
+				           <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+				         
+				        	
+				        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+				        	  	
+				        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+				       
+				        	
+				       	<fileset dir="${SRC_JS_DIR}" includes="FieldValidator.js"/>
+				        	
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.form.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.core.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.widget.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.mouse.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.slider.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.jscrollpane.min.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="jquery.mousewheel.js"/>
+        				<fileset dir="${SRC_JS_DIR}" includes="jquery.ui.touch-punch.js"/>
+			        	<fileset dir="${SRC_JS_DIR}" includes="scroller.js"/>
+				        	
+		        		<fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="filter.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="ComingSoon.js"/>
+				        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+				        	<!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+				       
+				        </concat>
+				        <echo message="${JSCOMING} built." />
+		</target>
+
+	    <target name="js.mincoming" depends="js" description="Minimize JavaScript files">
+	        <echo message="Building ${JS_MINCOMING}" />
+	        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+	            <fileset dir="${DIST_JS_DIR}">
+	                
+	            </fileset>
+	            <arg line="-jar" />
+	            <arg path="${YUI}" />
+	            <arg value="--charset" />
+	            <arg value="ANSI" />
+	            <arg value="-o" />
+	            <targetfile />
+	            <mapper type="glob" from="solestruckcoming.js" to="solestruckcoming.min.js" />
+	        </apply>
+	        <echo message="${JS_MINCOMING} built." />
+	    </target>
+	
+	<target name="jslookbook"  description="Concatenate JavaScript source files idp">
+					        <echo message="Building ${JSLOOKBOOK}" />
+					        <concat destfile="${JSLOOKBOOK}">
+					        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+					        	
+					           <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+					         
+					        	
+					        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+					        	  	
+					        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="lookbook.js"/>
+					        	
+					        	 <fileset dir="${SRC_JS_DIR}" includes="FieldValidator.js"/>
+					        	
+					        	
+			        		<fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="filter.js"/>
+					        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+					        	<!--<fileset dir="${SRC_JS_DIR}" includes="kgcurrencyconverter.js"/>-->
+					       
+					        </concat>
+					        <echo message="${JSLOOKBOOK} built." />
+			</target>
+
+		    <target name="js.minlookbook" depends="js" description="Minimize JavaScript files">
+		        <echo message="Building ${JS_MINLOOKBOOK}" />
+		        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+		            <fileset dir="${DIST_JS_DIR}">
+		                
+		            </fileset>
+		            <arg line="-jar" />
+		            <arg path="${YUI}" />
+		            <arg value="--charset" />
+		            <arg value="ANSI" />
+		            <arg value="-o" />
+		            <targetfile />
+		            <mapper type="glob" from="solestrucklookbook.js" to="solestrucklookbook.min.js" />
+		        </apply>
+		        <echo message="${JS_MINLOOKBOOK} built." />
+		    </target>
+	
+	<target name="jsmyaccount"  description="Concatenate JavaScript source files idp">
+						        <echo message="Building ${JSMYACC}" />
+						        <concat destfile="${JSMYACC}">
+						        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+						        	
+						        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+						        	
+						        
+						           <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+						        
+						           
+						        	
+						        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+						        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+						        	  	
+						        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+						        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+						        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+						        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+						        	
+						        </concat>
+						        <echo message="${JSMYACC} built." />
+	</target>
+
+		    <target name="js.minmyacc" depends="js" description="Minimize JavaScript files">
+		        <echo message="Building ${JSMYACCMIN}" />
+		        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+		            <fileset dir="${DIST_JS_DIR}">
+		                
+		            </fileset>
+		            <arg line="-jar" />
+		            <arg path="${YUI}" />
+		            <arg value="--charset" />
+		            <arg value="ANSI" />
+		            <arg value="-o" />
+		            <targetfile />
+		            <mapper type="glob" from="solestruckmyaccount.js" to="solestruckmyaccount.min.js" />
+		        </apply>
+		        <echo message="${JSMYACCMIN} built." />
+		    </target>
+	
+	<target name="jsthankyou"  description="Concatenate JavaScript source files idp">
+							        <echo message="Building ${JSTHANKYOU}" />
+							        <concat destfile="${JSTHANKYOU}">
+							        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+							        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+							        <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+							        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+							        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+							        <fileset dir="${SRC_JS_DIR}" includes="thankyou.js"/>	
+							        	
+							        </concat>
+							        <echo message="${JSTHANKYOU} built." />
+		</target>
+
+			    <target name="js.minthankyou" depends="js" description="Minimize JavaScript files">
+			        <echo message="Building ${JSTHANKYOUMIN}" />
+			        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+			            <fileset dir="${DIST_JS_DIR}">
+			                
+			            </fileset>
+			            <arg line="-jar" />
+			            <arg path="${YUI}" />
+			            <arg value="--charset" />
+			            <arg value="ANSI" />
+			            <arg value="-o" />
+			            <targetfile />
+			            <mapper type="glob" from="solestruckthankyou.js" to="solestruckthankyou.min.js" />
+			        </apply>
+			        <echo message="${JSTHANKYOUMIN} built." />
+			    </target>
+	
+	
+	<target name="jsstreetcred"  description="Concatenate JavaScript source files idp">
+								        <echo message="Building ${JSSTREETCRED}" />
+								        <concat destfile="${JSSTREETCRED}">
+								        	
+								        <!-- <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/> -->
+								        <fileset dir="${SRC_JS_DIR}" includes="jquery-1.8.0.min.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="jquery.carousel.js"/>		        	
+								        <fileset dir="${SRC_JS_DIR}" includes="shoppingcart.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="jquery.json-2.3.min.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="kgautocomplete.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="lookbook.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="FieldValidator.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="home.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="filter.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+								        <fileset dir="${SRC_JS_DIR}" includes="streetCred.js"/>
+								        	
+								        </concat>
+								        <echo message="${JSSTREETCRED} built." />
+			</target>
+
+			<target name="js.minstreetcred" depends="js" description="Minimize JavaScript files">
+				        <echo message="Building ${JSSTREETCREDMIN}" />
+				        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+				            <fileset dir="${DIST_JS_DIR}">
+				                
+				            </fileset>
+				            <arg line="-jar" />
+				            <arg path="${YUI}" />
+				            <arg value="--charset" />
+				            <arg value="ANSI" />
+				            <arg value="-o" />
+				            <targetfile />
+				            <mapper type="glob" from="solestruckstreetcred.js" to="solestruckstreetcred.min.js" />
+				        </apply>
+				        <echo message="${JSSTREETCREDMIN} built." />
+				    </target>
+	
+	
+	<target name="jscustomerservice"  description="Concatenate JavaScript source files idp">
+									        <echo message="Building ${JSCUSTOMERSERVICE}" />
+									        <concat destfile="${JSCUSTOMERSERVICE}">
+									        	
+									        	  <fileset dir="${SRC_JS_DIR}" includes="jquery-1.5.2.min.js"/>
+    									          <fileset dir="${SRC_JS_DIR}" includes="footer.js"/>
+    									          <fileset dir="${SRC_JS_DIR}" includes="actions.js"/>
+    									          <fileset dir="${SRC_JS_DIR}" includes="kgcustomdropdown.js"/>
+    									          <fileset dir="${SRC_JS_DIR}" includes="myaccount.js"/>
+									        	  <fileset dir="${SRC_JS_DIR}" includes="tooltip.js"/>
+									        	
+									        </concat>
+									        <echo message="${JSCUSTOMERSERVICE} built." />
+				</target>
+
+				<target name="js.mincustomerservice" depends="js" description="Minimize JavaScript files">
+					        <echo message="Building ${JSCUSTOMERSERVICEMIN}" />
+					        <apply executable="java" parallel="false" verbose="true" dest="${DIST_JS_DIR}">
+					            <fileset dir="${DIST_JS_DIR}">
+					                
+					            </fileset>
+					            <arg line="-jar" />
+					            <arg path="${YUI}" />
+					            <arg value="--charset" />
+					            <arg value="ANSI" />
+					            <arg value="-o" />
+					            <targetfile />
+					            <mapper type="glob" from="solestruckcustomerservice.js" to="solestruckcustomerservice.min.js" />
+					        </apply>
+					        <echo message="${JSCUSTOMERSERVICEMIN} built." />
+					    </target>
+	
+	
+	
+
+    <target name="clean">
+        <delete dir="${DIST_DIR}" />
+    	<delete file="${SRC_CSS_DIR}/solestruck.min.css"/>
+        <delete file="${SRC_JS_DIR}/solestruck.min.js"/>
+        <delete file="${SRC_JS_DIR}/solestruckidp.min.js"/>
+         <delete file="${SRC_JS_DIR}/solestruckwishlist.min.js"/>
+        <delete file="${SRC_JS_DIR}/solestrucklist.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestrucksort.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestrucknewarrival.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestrucksale.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckstyle.min.js"/>
+    	<delete file="${SRC_CSS_DIR}/solestruckcoming.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckmyaccount.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckmyaccount.js"/>
+    	<delete file="${SRC_JS_DIR}/solestrucksearch.js"/>
+    	<delete file="${SRC_JS_DIR}/solestrucklookbook.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckthankyou.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckthankyou.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckstreetcred.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckstreetcred.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckcustomerservice.min.js"/>
+    	<delete file="${SRC_JS_DIR}/solestruckcustomerservice.js"/>
+    	    	
+    </target>
+	
+	
+	<target name="copyFiles">
+		 <copy file="${DIST_JS_DIR}/solestruck.min.js" todir="${SRC_JS_DIR}"/>
+	     <copy file="${DIST_JS_DIR}/solestruckidp.min.js" todir="${SRC_JS_DIR}"/>
+	     <copy file="${DIST_JS_DIR}/solestruckwishlist.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestrucksearch.min.js" todir="${SRC_JS_DIR}"/>
+	     <copy file="${DIST_JS_DIR}/solestrucklist.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestrucksort.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestrucknewarrival.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestrucksale.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestruckstyle.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestruckcoming.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_CSS_DIR}/solestruck.min.css" todir="${SRC_CSS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestruckmyaccount.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestrucklookbook.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestruckthankyou.min.js" todir="${SRC_JS_DIR}"/>
+		 <copy file="${DIST_JS_DIR}/solestruckcustomerservice.min.js" todir="${SRC_JS_DIR}"/>
+	 	 <copy file="${DIST_JS_DIR}/solestruckstreetcred.min.js" todir="${SRC_JS_DIR}"/>
+		
+	</target>
+	
+	<target name="copyFilesForGzipping">
+			<mkdir dir="${DIST_JS_DIR}/cssgz" />
+			<mkdir dir="${DIST_JS_DIR}/jsgz" />
+		   <copy todir="${DIST_JS_DIR}/cssgz">
+			  <fileset dir="${SRC_CSS_DIR}"/>
+			</copy>
+			<copy todir="${DIST_JS_DIR}/jsgz">
+				<fileset dir="${SRC_JS_DIR}"/>
+			</copy>
+	</target>
+	
+	<target name="copyFilesFromGzipping">
+				
+			   <copy todir="${SRC_CSS_DIR}">
+				  <fileset dir="${DIST_CSS_DIR}/cssgz"/>
+				</copy>
+				<copy todir="${SRC_JS_DIR}">
+					<fileset dir="${DIST_JS_DIR}/jsgz"/>
+				</copy>
+	</target>
+	
+	<target name="copyFilesFromGzippingtoWEB-INF">
+					<delete dir="${WEBINF_DIR}/css" />
+				    <delete dir="${WEBINF_DIR}/js" />
+				    <mkdir dir="${WEBINF_DIR}/js" />
+		 		    <mkdir dir="${WEBINF_DIR}/css" />
+				   <copy todir="${WEBINF_DIR}/css">
+					  <fileset dir="${DIST_CSS_DIR}/cssgz"/>
+				   		<fileset dir="${SRC_CSS_DIR}"/>
+					</copy>
+					<copy todir="${WEBINF_DIR}/js">
+						<fileset dir="${DIST_JS_DIR}/jsgz"/>
+						<fileset dir="${SRC_JS_DIR}"/>
+					</copy>
+	</target>
+	
+	
+		
+		<target name="gzipFilesForMAC">
+			<echo message="gzipping ${DIST_CSS_DIR}" />
+			        <apply executable="gzip" parallel="false" verbose="true">
+			            <fileset dir="${DIST_JS_DIR}/jsgz">
+			            	
+			            </fileset>
+			            <arg line="-9" />
+			            
+			        </apply>
+			<apply executable="gzip" parallel="false" verbose="true">
+						            <fileset dir="${DIST_CSS_DIR}/cssgz">
+						            	
+						            </fileset>
+						            <arg line="-9" />
+						            
+						        </apply>
+			
+		</target>
+	
+	<target name="gzipFilesForWINDOWS">
+		<for param="file">
+							<path>
+								<fileset dir="${DIST_JS_DIR}/jsgz" includes="**/*.js" />
+								<fileset dir="${DIST_JS_DIR}/cssgz" includes="**/*.css" />
+							</path>
+							<sequential>
+								
+								<gzip src="@{file}" destfile="@{file}.gz" />
+								
+							</sequential>
+		</for>
+	</target>
+	
+	<target name="deletegzipfilesinsource">
+					<delete>
+					    <fileset dir="${SRC_JS_DIR}" includes="**/*.gz"/>
+						<fileset dir="${SRC_CSS_DIR}" includes="**/*.gz"/>
+					</delete>
+	</target>
+
+    <target name="all" depends="clean, css, css.min, js, js.min ,jsidp ,js.minidp, jswishlist ,js.minwishlist ,jssearch, js.minsearch ,jslist ,js.minlist ,jssort ,js.minsort,jsnewarrival ,js.minnewarrival ,jssale ,js.minsale ,jsstyle, js.minstyle,jscoming , js.mincoming, jsmyaccount, js.minmyacc, jslookbook, js.minlookbook, jsthankyou, js.minthankyou, jsstreetcred, js.minstreetcred,jscustomerservice,js.mincustomerservice, copyFiles">
+        <echo message="Build complete." />
+    </target>
+	
+	<target name="gzippingFOR_MAC" depends="copyFilesForGzipping, gzipFilesForMAC, deletegzipfilesinsource, copyFilesFromGzippingtoWEB-INF">
+	        <echo message="gzipping complete." />
+	</target>
+	
+	<target name="gzippingFOR_WINDOWS" depends="copyFilesForGzipping, gzipFilesForWINDOWS, deletegzipfilesinsource, copyFilesFromGzippingtoWEB-INF">
+		        <echo message="gzipping complete." />
+	</target>
+	
+	
+	
+</project>

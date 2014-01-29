@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+	
+	<cron>
+	    <url>/abandonmentMailCronService?type=cart&amp;interval=3</url>
+	    <description>Send mails for Open Cart</description>
+	    <schedule>every day 02:25</schedule>
+  	</cron> 
+  	<cron>
+	    <url>/abandonmentMailCronService?type=wishlist&amp;interval=14</url>
+	    <description>Send mails for Open Wishlist</description>
+	    <schedule>every day 02:26</schedule>
+  	</cron>
+    <cron>
+	    <url>/writeAReviewMailCronService</url>
+	    <description>Send mails for Write a review</description>
+	    <schedule>every day 03:00</schedule>
+  	</cron>
+ 	<cron>
+	    <url>/clearFrontEndCache_ListingPagesCronService.htm?nameSpace=categoryListingVendorNs</url>
+	    <description>Clear Category Listing Cache</description>
+	    <schedule>every 59 minutes</schedule>
+  	</cron> 
+  	
+  	<cron>
+    <url>/triggerStreetCredTags.htm?offset=0</url>
+    <description>Listing the street cred Tag names</description>
+    <schedule>every day 11:30</schedule>
+  </cron>
+  
+  <cron>
+    <url>/triggerStreetCredTags.htm?offset=3000</url>
+    <description>Listing the street cred Tag names</description>
+    <schedule>every day 13:30</schedule>
+  </cron>
+  
+  <cron>
+    <url>/triggerStreetCredTags.htm?offset=6000</url>
+    <description>Listing the street cred Tag names</description>
+    <schedule>every day 15:30</schedule>
+  </cron> 
+  
+  <cron>
+    <url>/triggerStreetCredTags.htm?offset=7900</url>
+    <description>Listing the street cred Tag names</description>
+    <schedule>every day 17:30</schedule>
+  </cron> 
+  
+  <cron>
+    <url>/clearFrontEndCache_DSURSizeCronService.htm?nameSpace=dont_see_your_sizes</url>
+    <description>Clear Don't See Your Size Cache</description>
+    <schedule>every day 21:00</schedule>
+  </cron>
+  
+</cronentries>

@@ -1,0 +1,34 @@
+
+/* CSS Document */
+
+.select_popup {
+    height: 21px;
+}
+.size_color_select_fields {
+	padding: 5px 0px 0px 10px;
+}
+
+.registration_inputfield {
+	height: 17px;
+	padding:7px 10px;
+}
+
+
+.sendtofriend_popup_holder input.registration_inputfield { 
+	padding:10px 0px 5px 10px;
+	height:22px;
+	width:205px;
+}
+
+
+
+.size_color_select_fields { padding: 5px 0px 0px 10px; }
+.brand_view_pageination ul li.third .select_popup { height:25px;  }
+
+
+.amount,.amount1 {
+	line-height:13px !important;
+}
+
+.select_pannel_checkbox { margin-top: -2px !important;}
+.select_drop_down ul li label { line-height:16px;}
